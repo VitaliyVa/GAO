@@ -1,0 +1,44 @@
+@import 'fonts';
+@import 'main-header';
+@import 'about_us';
+@import 'work';
+@import 'client';
+@import 'team';
+@import 'practise';
+@import 'map';
+@import 'footer';
+// about-page
+@import 'about-header';
+// profile-page
+@import 'profile-header';
+body {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: 'OpenSans-Regular', sans-serif;
+
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 85%;
+	margin: 0 auto;
+	border: 1px solid transparent;
+	
+
+
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+img {
+	 	max-width: 100%;
+		height: auto;
+	 }
+
+
+	

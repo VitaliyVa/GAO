@@ -1,0 +1,43 @@
+.practise {
+	
+}
+.pract-prof {
+	overflow: hidden;
+	max-width: 370px;
+	min-height: 500px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
+	-moz-box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
+	box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
+	text-align: center;
+	padding: 55px;
+	.preact-icon {
+		margin-top: 40px;
+		transition: transform .2s;
+	}
+	.btn-read {
+		color: #D2A351;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	
+
+	&:hover {
+		.pract-icon {
+			transform: scale(4);
+		}
+	}
+}
+.green-practise {
+	font-family: 'RobotoSlab-Bold';
+	color: #054C23;
+	line-height: 1;
+	margin-bottom: 15px;
+	margin-top: 60px;
+}
+.sub-practise {
+	font-family: 'meiryo';
+	color: #727271;
+	line-height: 1.5;
+}
