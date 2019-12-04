@@ -34,9 +34,9 @@
 	 font-family: 'meiryo';
 	color: #fff;
 	line-height: 1;
-	font-size: 18px;
+	font-size: 17px;
 	max-width: 150px;
-	margin-left: 60px;
+	margin-left: 35px;
 	text-align: center;
 	cursor: pointer;
 	transition: font-family 3.4s, color .2s;
@@ -54,6 +54,11 @@
 	width: 54%;
 	margin: 0 auto;
 
+
+	img {
+		    min-height: 500px;
+	}
+
 	
 }
 .btn-gold {
@@ -70,17 +75,33 @@
 }
 @media (max-width: 1744px) {
 	.team-name-prof {
-		margin-left: 48px;
+		margin-left: 20px;
 	}
 }
 @media (max-width: 1623px) {
 	.team-name-prof {
-		margin-left: 36px;
+		margin-left: 20px;
 	}
 }
-@media (max-width: 1483px) {
+@media (max-width: 1532px) {
 	.team-name-prof {
 		margin: 0 auto;
+	}
+	.team-wrap {
+
+		img {
+			    min-height: 400px;
+		}
+	}
+}
+@media (max-width: 1333px) {
+	.team-name-prof {
+		font-size: 15px;
+	}
+}
+@media (max-width: 1227px) {
+	.team-wrap img {
+	    min-height: 305px;
 	}
 }
 @media (max-width: 1175px) {
@@ -88,14 +109,30 @@
 		font-size: 13px;
 	}
 }
-@media (max-width: 874px) {
-	.team-name-block {
-		margin-top: -44px;
+@media (max-width: 1113px) {
+	.team-name-prof {
+	    margin-top: 45px;
 	}
+}
+@media (max-width: 974px) {
+	.team-wrap {
+
+		img {
+			    min-height: 250px;
+		}
+	}
+}
+@media (max-width: 957px) {
+	.team-name-prof {
+		font-size: 11px;
+	}
+}
+@media (max-width: 874px) {
+	
 }
 @media (max-width: 837px) {
 	.team-name-prof {
-		font-size: 9px;
+		font-size: 11px;
 	}
 	.team-wrap {
 		width: 90%;
@@ -104,5 +141,43 @@
 @media (max-width: 526px) {
 	.team .btn-gold {
     margin-top: 30px;
+	}
+}
+@media (max-width: 513px) {
+	.team-wrap {
+
+		img {
+			    min-height: 175px;
+		}
+	}
+	.team-name-prof {
+	    font-size: 8px;
+	    margin-left: 15px;
+	}
+}
+@media (max-width: 462px) {
+	.team-name-smihura {
+		margin-left: 13px !important;
+	}
+	.team-name-prof {
+		margin-left: 0;
+	}
+}
+@media (max-width: 400px) {
+	.team-name-smihura {
+		margin-left: 3px !important;
+	}
+}
+@media (max-width: 362px) {
+	.team-name-prof {
+    font-size: 6px;
+        margin-top: 15px;
+	}
+	.team-name-smihura {
+		margin-left: 12px !important;
+	}
+	.team-name-block {
+	    display: flex;
+	    margin-top: -37px;
 	}
 }

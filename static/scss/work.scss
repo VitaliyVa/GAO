@@ -23,7 +23,8 @@
 .green-name {
 	position: relative;
 	color: #054C23;
-	 font-family: 'RobotoSlab-Bold';
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 	 line-height: 1;
 	 font-size: 20px;
 	 padding-bottom: 17px;
@@ -47,14 +48,14 @@
 	
 	display: flex;
 	justify-content: space-between;
-	width: calc(50% + 55px);
+	width: calc(50% + 52px);
 	margin-top: 50px;
 	
 
 
 	img {
 		margin: 0 10px;
-		width: 90px;
+		width: 85px;
 		height: 85px;
 	}
 }

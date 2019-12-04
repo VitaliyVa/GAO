@@ -62,9 +62,10 @@ html {
 	text-transform: uppercase;
 	line-height: 1.7;
 	font-size: 65px;
-	opacity: 0.4;
+	opacity: 0.14;
 	color: #D2A351;
-	font-family: 'RobotoSlab-Bold';
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 }
 
 #port {
@@ -280,8 +281,9 @@ html {
 	flex-direction: column;
 
 	a {
-		margin-bottom: 6px;
+		margin-bottom: 2px;
 		font-family: 'meiryo';
+		font-size: 14px;
 	}
 }
 
@@ -500,9 +502,13 @@ html {
 	margin-top: 10px;
 }
 .header-logo {
-	margin-top: 0;
+	margin-top: 16px;
 	z-index: 3;
 	margin-left: 20px;
+
+	img {
+		width: 13%;
+	}
 }
 .hvr-bounce-to-right {
   display: inline-block;

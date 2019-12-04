@@ -27,14 +27,15 @@
 	color: #D2A351;
 	text-align: center;
 	line-height: 1;
-	font-family: 'RobotoSlab-Bold';
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 	font-size: 26pt;
 	margin: 0 auto;
 	margin-top: 80px;
 }
 .punct-text {
 	max-width: 549px;
-	 outline: 1px dashed rgba(black, 0.8); 
+	 
 	 padding-bottom: 20px;
 	 font-family: 'meiryo';
 	line-height: 1.4;
@@ -63,9 +64,14 @@
 }
 .about-left {
 	width: 46%;
+
+	img {
+		min-height: 178px;
+	}
 }
 .about-right {
 	width: 54%;
+	min-height: 552px;
 }
 .btn-wrap {
 	width: 100%;

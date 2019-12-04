@@ -3,7 +3,8 @@
 	background-color: #F5F5F5;
 }
 .city-name {
-	font-family: 'RobotoSlab-Bold';
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 	color: #727271;
 	margin-right: 50px;
 	line-height: 1.4;
@@ -33,13 +34,15 @@
 	}
 
 	a {
-		font-family: 'OpenSans-Regular';
+		font-family: 'Roboto Slab', serif;
+		font-weight: 400;
 		color: #6C6C6C;
 		font-stretch: 18px;
 	}
 }
 .green-text {
-	font-family: 'RobotoSlab-Bold';
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 	color: #054C23;
 	font-size: 20px;
 	margin-bottom: 10px;
@@ -94,7 +97,8 @@
 	    width: 53%;
 	}
 	.city-name {
-    font-family: 'RobotoSlab-Bold';
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
     color: #727271;
     margin-right: 20px;
     line-height: 1.4;
@@ -108,6 +112,7 @@
 	    margin-top: 153px;
 	}
 }
+
 @media (max-width: 916px) {
 	.map-wrap {
 		flex-direction: column;
