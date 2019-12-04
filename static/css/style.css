@@ -110,14 +110,25 @@ html {
 .main-header {
   position: relative;
   min-height: 100px;
-  background: url("../img/main-header-bg.png") no-repeat center top/cover;
-  background-color: #010B01;
+  background: linear-gradient(39deg, #030A00, #112804);
   background-size: 100%;
   z-index: 2;
-  padding-bottom: 226px; }
+  padding-bottom: 124px;
+  overflow: hidden; }
   .main-header .container {
     padding-top: 50px;
     padding-bottom: 50px; }
+
+.shadow-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  text-transform: uppercase;
+  line-height: 1.7;
+  font-size: 65px;
+  opacity: 0.4;
+  color: #D2A351;
+  font-family: 'RobotoSlab-Bold'; }
 
 #port {
   background: transparent;
@@ -128,6 +139,7 @@ html {
 
 .scene-wrap {
   margin: 0 auto;
+  margin-top: 32px;
   width: 38%;
   align-items: center; }
 
@@ -581,11 +593,11 @@ html {
 
 @media (max-width: 1800px) {
   .main-header .container {
-    padding-bottom: 277px; } }
+    padding-bottom: 46px; } }
 @media (max-width: 1582px) {
   .main-header {
     position: relative;
-    padding-bottom: 0; } }
+    padding-bottom: 95px; } }
 @media (max-width: 1266px) {
   .menu {
     right: 26%; } }
@@ -610,14 +622,24 @@ html {
 
   .menu-info {
     font-size: 11px; } }
+@media (max-width: 1045px) {
+  .shadow-text {
+    font-size: 45px; } }
 @media (max-width: 995px) {
   .menu {
     right: 25%; } }
+@media (max-width: 958px) {
+  .main-header {
+    padding-bottom: 166px; } }
 @media (max-width: 723px) {
   .header-logo {
     margin-top: 23px; }
     .header-logo img {
       width: 16%; } }
+@media (max-width: 719px) {
+  .shadow-text {
+    left: 12%;
+    font-size: 33px; } }
 @media (max-width: 630px) {
   .header-logo {
     margin-top: 17px !important; }
@@ -750,6 +772,9 @@ html {
   color: #D2A351;
   font-family: 'meiryob'; }
 
+@media (max-width: 520px) {
+  .shadow-text {
+    font-size: 25px; } }
 @media (max-width: 515px) {
   .btn-communicate {
     display: none; } }
@@ -822,7 +847,7 @@ html {
       margin: 0 auto; } }
 @media (max-width: 693px) {
   .main-header .container {
-    padding-bottom: 228px; } }
+    padding-bottom: 136px; } }
 @media (max-width: 600px) {
   .input-wrap input {
     font-size: 10px; } }
@@ -1083,11 +1108,12 @@ html {
 .team {
   position: relative;
   padding-bottom: 20px;
-  background: url("../img/team/team-bg.png") no-repeat center top/cover;
-  padding-bottom: 90px; }
+  background: linear-gradient(39deg, #030A00, #112804); }
   .team .slider-header-wrap {
     position: relative;
     margin-top: 100px; }
+  .team .btn-gold {
+    margin-bottom: 68px; }
   .team .main__title:before {
     display: block;
     content: "";
@@ -1156,6 +1182,11 @@ html {
     height: 170px;
     margin: -170px 0 0; }
 
+.svg-pract {
+  fill: #D2A351;
+  width: 183px;
+  margin: 0 auto; }
+
 .pract-prof {
   overflow: hidden;
   max-width: 370px;
@@ -1197,9 +1228,10 @@ html {
 .green-practise {
   font-family: 'RobotoSlab-Bold';
   color: #054C23;
-  line-height: 1;
+  line-height: 1.3;
   margin-bottom: 15px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-top: 29px; }
 
 .sub-practise {
   font-family: 'meiryo';

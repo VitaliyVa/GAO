@@ -1,15 +1,18 @@
 .team {
 	position: relative;
 	padding-bottom: 20px;
-	background: url('../img/team/team-bg.png') no-repeat center top / cover;
-padding-bottom: 90px;
+	
+	background: linear-gradient(39deg, #030A00, #112804);
+                 
+
+	
 	.slider-header-wrap {
 		position: relative;
 		margin-top: 100px;
 
 	}
 	.btn-gold {
-		
+		    margin-bottom: 68px;
 	}
 		.main__title {
 			&:before {
@@ -19,6 +22,12 @@ padding-bottom: 90px;
 			margin: -155px 0 0;
 			}
 		}
+
+
+
+	
+			
+		
 
 }
 .team-name-prof {
