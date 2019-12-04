@@ -2,21 +2,113 @@ new WOW().init();
 
 $(document).ready(function () {
 
+	
+
+
+
+
 
 	// MENU
-	let link = $('.menu-link');
-	let link_active = $('menu-link_active');
-	let menu = $('.menu');
-	link.click(function () {
+	var link = $('.menu-link');
+	var link_active = $('.menu-link_active');
+	var menu = $('.menu');
+
+	
+	$('.menu-link').on('click', function () {
 		link.toggleClass('menu-link_active');
 		menu.toggleClass('menu_active');
+		// console.log($(this).hasClass('menu-link_active'));
+		if(!$(this).hasClass('menu-link_active')){
+			$("html,body").css("overflow","visible");
+		}else{
+			$("html,body").css("overflow","hidden");
+		}
+		//  
+		//  $('.menu-link_active').on('click', function() {
+		// link.removeClass('menu-link_active');
+		//  
+
+	// });
+
 	});
-	link_active.click(function() {
-		link.removeClass('menu-link_active');
+	// $('.menu-link_active').on('click', function() {
+	// 	link.removeClass('menu-link_active');
+	// 	 $("html,body").css("overflow","visible");
+
+	// });
+
+	var punch_link = $('.punch_link');
+	punch_link.on('click', function() {
+		link.toggleClass('menu-link_active');
+		menu.removeClass('menu_active');
+		 $("html,body").css("overflow","visible");
+	});
+	// link-page
+
+	function goToPage()
+	{
+		var url_link = document.getElementById('link-test');
+		document.location.href = url_link.value;
+	}
+
+	// sub-menu
+
+	// var sub_link = $('.sub_link');
+	
+	
+	// var sub_menu_active = $('sub-menu_active');
+	// var sub_menu = $('.sub-menu');
+	// sub_link.on('click', function () {
+	// 	sub_menu.toggleClass('sub-menu_active');
+	// 	sub_link_2.removeClass('sub-menu_active-2');
+	// });
+	// sub_menu_active.on("click", function() {
+	// 	sub_link.removeClass('sub-menu_active');
+	// });
+	// // sub-menu-2
+	// var sub_link_2 = $('.sub_link-2');
+	// var sub_menu_active_2 = $('sub-menu_active-2');
+	// var sub_menu_2 = $('.sub-menu-2');
+
+	// sub_link_2.on('click', function () {
+	// 	sub_menu_2.toggleClass('sub-menu_active-2');
+	// 	sub_link.removeClass('sub-menu_active');
+	// });
+	// sub_menu_active_2.on("click",function() {
+	// 	sub_link_2.removeClass('sub-menu_active-2');
+	// });
+// id
+	// var id_link = $('.elips');
+	// id_link.on("click", function () {
+	// 	// id_link.toggleClass('elips_active');
+	// 	$(this).addClass('elips_active').siblings().removeClass('elips_active');
+		
+	// });
+
+
+
+	jQuery(function($){
+	    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+	        var block = $("sub-m-1"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+	        if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
+	            && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+	            block.hide(); // если условия выполняются - скрываем наш элемент
+	        }
+	    });
 	});
 
 
-
+//slider-logo
+	var logoSlick = $('.sliderLogo').slick({
+			nextArrow: document.querySelector('#my-arrow-next'),
+			prevArrow: document.querySelector('#my-arrow-prev'),
+		  	dots: false,
+		  	swipe: false,
+		  	fade: true,
+		  	autoplay: true,
+		  	autoplaySpeed: 5000,
+		  	pauseOnHover: false,
+	});
 
 	// SLIDER
 	var mainSlick = $('.sliderS').slick({
@@ -24,6 +116,8 @@ $(document).ready(function () {
 		prevArrow: document.querySelector('#my-arrow-prev'),
 	  	dots: false,
 	  	swipe: false,
+	  	fade: true,
+	  	speed: 100
 
 		
 	  });
@@ -59,12 +153,50 @@ $(document).ready(function () {
 
 
 
+
+
 	$(function(){
     $('.city-swap div:first').addClass('city-name_active');
     $('.tab-content .map-info-block:first').css('display', 'block');
   })
+
+
+
 	//mask 
 
 	$("#phone").mask("+38 (09) 9 9 - 9 9 - 9 9 9 9");
+
+	//paralax
+	var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);
+
+
+
+	// scroll
+
+	// window.addEventListener('scroll', function() {
+	//   document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+	// });
+
+	// var block_1 = $('#main-header')[0].offsetHeight;
+	// var block_2 = $('#about_us')[0].offsetHeight;
+	// var block_3 = $('#work')[0].offsetHeight;
+	// var block_4 = $('#client')[0].offsetHeight;
+	// var block_5 = $('#team')[0].offsetHeight;
+	// var block_6 = $('#practise')[0].offsetHeight;
+	// var top_menu = $('#menu_id')[0].offsetHeight;
+	
+
+	// console.log(top_menu);
+
+	// $('#about__link').on("click", function () {
+	// 	window.scrollTo(0, block_1 + top_menu);
+	// });
+	// $('#team__link').on("click", function () {
+	// 	window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + top_menu);
+	// });
+	// $('#practise__link').on("click", function () {
+	// 	window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + block_5 + top_menu);
+	// });
 
 });

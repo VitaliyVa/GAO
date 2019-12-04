@@ -1,6 +1,16 @@
 .work {
-	
+	position: relative;
 	background-color: #F5F5F5;
+
+
+	.main__title {
+		&:before {
+		display: block;
+		content: "";
+		height: 165px;
+		margin: -165px 0 0;
+		}
+	}
 }
 .line {
 	position: absolute;

@@ -11,6 +11,8 @@
 @import 'about-header';
 // profile-page
 @import 'profile-header';
+// practise-header
+@import 'practise-header';
 body {
 	position: relative;
 	padding: 0;
@@ -40,5 +42,8 @@ img {
 		height: auto;
 	 }
 
+.slide-prof.slick-slide {
+	transition: opacity 500ms ease 0s !important;
+}
 
 	

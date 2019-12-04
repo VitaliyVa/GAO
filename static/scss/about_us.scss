@@ -1,14 +1,23 @@
 .about_us {
+	position: relative;
 		.btn-read {
 
 			color: #D2A351;
-			transition: color .2s;
+			transition: color .2s, background-color .2s;
 			margin: 0 auto;
 			margin-top: 30px;
-			margin-bottom: 50px;
+			margin-bottom: 82px;
 			&:hover {
 				color: #fff;
 			}
+		}
+		.main__title {
+			&:before {
+	display: block;
+	content: "";
+	height: 175px;
+	margin: -175px 0 0;
+	}
 		}
 }
 .main__title {
@@ -34,7 +43,7 @@
 .about-profile {
 	max-width: 100%;
 	margin-top: 60px;
-	    justify-content: flex-end;
+	   
 	
 	display: flex;
 	

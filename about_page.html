@@ -18,7 +18,7 @@
 </head>
 <body>
 	    <header class="about-header">
-	    	<div class="all__menu">
+	    	<div id="menu_id" class="all__menu">
 	    		<div class="header-logo">
 	    			<img src="static/img/header-logo.png" alt="">
 	    		</div>
@@ -38,13 +38,72 @@
 	    		 </div> 
 
 	    		<div class="menu">
-	    			<ul>
-	    				<li><a href="#">Про нас</a></li>
-	    				<li><a href="#">Команда</a></li>
-	    				<li><a href="#">Практики</a></li>
-	    				<li><a href="#">Блог</a></li>
-	    				<li><a href="#">Контакти</a></li>
+	    			<ul class="main-ul">
+	    				<li id="about__link" class="hvr-underline-from-center punch_link"><a class="link_main" href="about_page.html">
+	    					Про нас
+	    				</a></li>
+	    				<li id="team__link" class="sub_link hvr-underline-from-center punch_link">
+	    					<a class="link_main" href="#main__title-team">
+	    					Команда
+	    					</a>
+	    						 
+	    					<img class="menu-arrow" src="static/img/menu-arrow.png" alt="">
+	    					
+							
+								<ul class="sub-menu">
+									<li class="sub__link sub__link-1"><a href="">Судова практика</a></li>
+									<li class="sub__link"><a href="">Практика  земельних правовідносин</a></li>
+									<li class="sub__link"><a href="">Договірна та претензійна практика</a></li>
+									<li class="sub__link"><a href="">Практика  кримінально-правового захисту</a></li>
+									<li class="sub__link"><a href="">Консалтинг з юридичних питань</a></li>
+									<li class="sub__link"><a href="">Податкова практика</a></li>
+									<li class="sub__link"><a href="">Купівля-продаж підприємств</a></li>
+									<li class="sub__link"><a href="">Державна реєстрація</a></li>
+									<li class="sub__link"><a href="">Практика із надання бухгалтерських послуг</a></li>
+								</ul>
+							
+	    				</li>
+	    				<li id="practise__link" class="sub_link hvr-underline-from-center punch_link">
+	    					<a class="link_main" href="#main__title-practise">
+	    					Практики
+	    					</a>
+	    						
+	    					<img class="menu-arrow" src="static/img/menu-arrow.png" alt="">
+	    					
+							
+								<ul class="sub-menu">
+									<li class="sub__link sub__link-1"><a href="practise-1.html">Судова практика</a></li>
+									<li class="sub__link"><a href="practise-2.html">Практика  земельних правовідносин</a></li>
+									<li class="sub__link"><a href="practise-3.html">Договірна та претензійна практика</a></li>
+									<li class="sub__link"><a href="practise-4.html">Практика  кримінально-правового захисту</a></li>
+									<li class="sub__link"><a href="practise-5.html">Консалтинг з юридичних питань</a></li>
+									<li class="sub__link"><a href="practise-6.html">Податкова практика</a></li>
+									<li class="sub__link"><a href="practise-6.html">Купівля-продаж підприємств</a></li>
+									<li class="sub__link"><a href="practise-7.html">Державна реєстрація</a></li>
+									<li class="sub__link"><a href="practise-8.html">Практика із надання бухгалтерських послуг</a></li>
+								</ul>
+							
+	    				</li>
+	    				<li id="blog__link" class="hvr-underline-from-center punch_link link_main">
+	    					<a href="blog.html">
+	    						Блог
+	    					</a>
+	    				</li>
+	    				<li id="contact__link" class="hvr-underline-from-center punch_link link_main">
+	    					<a href="#">
+	    						Контакти
+	    					</a>
+	    				</li>
 	    			</ul>
+	    			<div class="menu-info-new">
+	    				<a href="tel:+38096675154">+38 096 675 15 4*</a>
+	    				<a href="mail:info@GAO.com">info@GAO.com</a>
+	    				<div class="info-icon-block">
+	    					<img src="static/img/header-ico-1.png" alt="">
+	    					<img src="static/img/header-ico-2.png" alt="">
+	    					<img src="static/img/header-ico-3.png" alt="">
+	    				</div>
+	    			</div>
 	    		</div>
 	    	</div>
 	    	<div class="container">
@@ -136,9 +195,14 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<!-- <a href="">
+	    					
+	    				</a> -->
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 	    			<div class="about-prof">
 	    				<img class="img-prof" src="static/img/about-pg/about-pg-img.png" alt="">
@@ -174,9 +238,14 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<!-- <a href="">
+	    					
+	    				</a> -->
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 	    			<div class="about-prof">
 	    				<img class="img-prof" src="static/img/about-pg/about-pg-img.png" alt="">
@@ -212,9 +281,14 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<!-- <a href="">
+	    					
+	    				</a> -->
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 	    			<div class="about-prof">
 	    				<img class="img-prof" src="static/img/about-pg/about-pg-img.png" alt="">
@@ -250,9 +324,14 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<!-- <a href="">
+	    					
+	    				</a> -->
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 	    			<div class="about-prof">
 	    				<img class="img-prof" src="static/img/about-pg/about-pg-img.png" alt="">
@@ -288,9 +367,14 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<!-- <a href="">
+	    					
+	    				</a> -->
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 	    			<div class="about-prof">
 	    				<img class="img-prof" src="static/img/about-pg/about-pg-img.png" alt="">
@@ -326,9 +410,11 @@
 	    						</a>
 	    					
 	    				</div>
-	    				<div class="btn-read">
+	    				<a href="profile_page.html">
+	    					<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
+	    				</a>
 	    			</div>
 
 	    		</div>

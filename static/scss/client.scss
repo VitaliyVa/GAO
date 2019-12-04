@@ -1,5 +1,16 @@
 .client {
+	position: relative;
+	padding-bottom: 50px;
 
+
+	.main__title {
+		&:before {
+		display: block;
+		content: "";
+		height: 155px;
+		margin: -155px 0 0;
+		}
+	}
 }
 
 .client-profile {
@@ -45,7 +56,7 @@
 	}
 }
 .sub-work {
-	max-width: 750px;
+	
 }
 @media (max-width: 678px) {
 	.client-profile {

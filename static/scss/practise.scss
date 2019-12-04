@@ -1,20 +1,33 @@
 .practise {
-	
+	position: relative;
+
+
+	.main__title {
+		&:before {
+		display: block;
+		content: "";
+		height: 170px;
+		margin: -170px 0 0;
+		}
+	}
 }
 .pract-prof {
 	overflow: hidden;
 	max-width: 370px;
+	height: 485px;
 	min-height: 500px;
+	width: 34%;
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
 	-moz-box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
 	box-shadow: 0px 0px 34px -5px rgba(196,190,196,1);
 	text-align: center;
 	padding: 55px;
-	.preact-icon {
-		margin-top: 40px;
-		transition: transform .2s;
-	}
+	cursor: pointer;
+	margin-top: 40px;
+	margin-left: 30px;
+	
+	
 	.btn-read {
 		color: #D2A351;
 		margin: 0 auto;
@@ -25,9 +38,37 @@
 
 	&:hover {
 		.pract-icon {
-			transform: scale(4);
+			transform: scale(2);
+		}
+		.btn-read {
+			background-color: #D2A351;
+			color: #fff;
 		}
 	}
+}
+.pract-fix {
+	&:hover {
+		.pract-icon {
+			transform: scale(2) translateY(-50px);
+		}
+		.btn-read {
+			background-color: #D2A351;
+			color: #fff;
+		}
+	}
+}
+.pract-icon {
+	margin-top: 15px;
+	transition: transform 0.2s;
+	transition-delay: scale 0.5s;
+
+	img {
+		transition: scale .2s !important;
+	}
+
+}
+.pract-icon-1 {
+	
 }
 .green-practise {
 	font-family: 'RobotoSlab-Bold';
@@ -40,4 +81,91 @@
 	font-family: 'meiryo';
 	color: #727271;
 	line-height: 1.5;
+}
+.simple-text {
+	font-family: 'meiryo';
+	color: #727271;
+	line-height: 1.3;
+}
+.gold-practise {
+	font-family: 'meiryob';
+	line-height: 1.5;
+	color: #D2A351;
+}
+.practise-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 1599px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.pract-prof-center {
+	margin-top: 110px;
+}
+.main__title-fix {
+	margin-top: 116px !important;
+}
+.pract-fix {
+	padding: 15px !important;
+	    text-align: left !important;
+
+	    .green-practise {
+	    	margin-top: 0;
+	    }
+
+	    img {
+	    	margin-top: 20px;
+	    }
+}
+@media (max-width: 1413px) {
+	.pract-prof {
+		max-width: 329px;
+	}
+}
+@media (max-width: 1268px) {
+	.pract-prof-center {
+		margin-top: 40px;
+	}
+	.pract-prof {
+	    max-width: 380px;
+	    width: 50%;
+	}
+}
+@media (max-width: 723px) {
+	.pract-prof {
+		padding: 19px;
+		height: 451px;
+		    min-height: 440px;
+	}
+}
+@media (max-width: 661px) {
+	.practise-block {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 618px) {
+	.pract-prof {
+	    width: 60%;
+	}
+}
+@media (max-width: 479px) {
+	.pract-prof {
+	    width: 80%;
+	}
+}
+@media (max-width: 371px) {
+	.pract-prof {
+	    width: 89%;
+	    margin-left: 0;
+	    height: 403px;
+	        min-height: 405px;
+	}
+	.pract-prof .btn-read {
+		margin-top: 8px;
+	}
+	.green-practise {
+		margin-top: 35px;
+	}
 }

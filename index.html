@@ -14,11 +14,13 @@
   	<link rel="stylesheet" href="static/slick/slick.css">
   	<link rel="stylesheet" href="static/slick/slick-theme.css">
   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  	<link rel="stylesheet" href="static/css/jquery.parallax.css" />
   	
 </head>
 <body>
-	    <header class="main-header">
-	    	<div class="all__menu">
+
+	    <header id="main-header" class="main-header">
+	    	<div id="menu_id" class="all__menu">
 	    		<div class="header-logo">
 	    			<img src="static/img/header-logo.png" alt="">
 	    		</div>
@@ -38,17 +40,81 @@
 	    		 </div> 
 
 	    		<div class="menu">
-	    			<ul>
-	    				<li><a href="#">Про нас</a></li>
-	    				<li><a href="#">Команда</a></li>
-	    				<li><a href="#">Практики</a></li>
-	    				<li><a href="#">Блог</a></li>
-	    				<li><a href="#">Контакти</a></li>
+	    			<ul class="main-ul">
+	    				<li id="about__link" class="hvr-underline-from-center punch_link"><a class="link_main" href="about_page.html">
+	    					Про нас
+	    				</a></li>
+	    				<li id="team__link" class="sub_link hvr-underline-from-center punch_link">
+	    					<a class="link_main" href="#main__title-team">
+	    					Команда
+	    					</a>
+	    						 
+	    					<img class="menu-arrow" src="static/img/menu-arrow.png" alt="">
+	    					
+							
+								<ul class="sub-menu">
+									<li class="sub__link sub__link-1"><a href="">Судова практика</a></li>
+									<li class="sub__link"><a href="">Практика  земельних правовідносин</a></li>
+									<li class="sub__link"><a href="">Договірна та претензійна практика</a></li>
+									<li class="sub__link"><a href="">Практика  кримінально-правового захисту</a></li>
+									<li class="sub__link"><a href="">Консалтинг з юридичних питань</a></li>
+									<li class="sub__link"><a href="">Податкова практика</a></li>
+									<li class="sub__link"><a href="">Купівля-продаж підприємств</a></li>
+									<li class="sub__link"><a href="">Державна реєстрація</a></li>
+									<li class="sub__link"><a href="">Практика із надання бухгалтерських послуг</a></li>
+								</ul>
+							
+	    				</li>
+	    				<li id="practise__link" class="sub_link hvr-underline-from-center punch_link">
+	    					<a class="link_main" href="#main__title-practise">
+	    					Практики
+	    					</a>
+	    						
+	    					<img class="menu-arrow" src="static/img/menu-arrow.png" alt="">
+	    					
+							
+								<ul class="sub-menu">
+									<li class="sub__link sub__link-1"><a href="practise-1.html">Судова практика</a></li>
+									<li class="sub__link"><a href="practise-2.html">Практика  земельних правовідносин</a></li>
+									<li class="sub__link"><a href="practise-3.html">Договірна та претензійна практика</a></li>
+									<li class="sub__link"><a href="practise-4.html">Практика  кримінально-правового захисту</a></li>
+									<li class="sub__link"><a href="practise-5.html">Консалтинг з юридичних питань</a></li>
+									<li class="sub__link"><a href="practise-6.html">Податкова практика</a></li>
+									<li class="sub__link"><a href="practise-6.html">Купівля-продаж підприємств</a></li>
+									<li class="sub__link"><a href="practise-7.html">Державна реєстрація</a></li>
+									<li class="sub__link"><a href="practise-8.html">Практика із надання бухгалтерських послуг</a></li>
+								</ul>
+							
+	    				</li>
+	    				<li id="blog__link" class="hvr-underline-from-center punch_link link_main">
+	    					<a href="blog.html">
+	    						Блог
+	    					</a>
+	    				</li>
+	    				<li id="contact__link" class="hvr-underline-from-center punch_link link_main">
+	    					<a href="#">
+	    						Контакти
+	    					</a>
+	    				</li>
 	    			</ul>
+	    			<div class="menu-info-new">
+	    				<a href="tel:+38096675154">+38 096 675 15 4*</a>
+	    				<a href="mail:info@GAO.com">info@GAO.com</a>
+	    				<div class="info-icon-block">
+	    					<img src="static/img/header-ico-1.png" alt="">
+	    					<img src="static/img/header-ico-2.png" alt="">
+	    					<img src="static/img/header-ico-3.png" alt="">
+	    				</div>
+	    			</div>
 	    		</div>
 	    	</div>
 	    	<div class="container">
-	    		
+	    		<!-- <div id="showScroll"></div> -->
+	    		<div class="info-icon-block-container">
+	    					<img src="static/img/header-ico-1.png" alt="">
+	    					<img src="static/img/header-ico-2.png" alt="">
+	    					<img src="static/img/header-ico-3.png" alt="">
+	    				</div>
 	    		<form method="post" action="sendmail.php" class="formA" id="modal-form" style="display:none;">
 	    		  
 	    		  <div class="modal-block">
@@ -57,17 +123,17 @@
 	    		  	</div>
 	    		  	<div class="input-wrap">
 	    		  		<img class="form_icon" src="static/img/form-icon-1.png" alt="">
-	    		  		<input type="text" placeholder="Прізвище та ім'я">
+	    		  		<input type="text" placeholder="Прізвище та ім'я" required>
 	    		  	</div>
 	    		  	<div class="input-wrap">
 	    		  		<img class="form_icon" src="static/img/form-icon-2.png" alt="">
-	    		  		<input id="phone" type="text" placeholder="+38 (0_) _ _ - _ _ - _ _ _">
+	    		  		<input id="phone" type="text" placeholder="+38 (0_) _ _ - _ _ - _ _ _" required>
 	    		  	</div>
 	    		  	<div class="input-wrap">
 	    		  		<img class="form_icon" src="static/img/form-icon-3.png" alt="">
-	    		  		<input type="text" placeholder="Email">
+	    		  		<input type="text" placeholder="Email" required>
 	    		  	</div>
-	    		  	<div class="btn-read">
+	    		  	<div class="btn-read hvr-fade">
 	    		  		Надіслати
 	    		  	</div>
 	    		  </div>
@@ -80,7 +146,19 @@
 	    				Консультація
 	    			</div>
 	    		</a>
-	    		
+	    		<div class="scene-wrap">
+	    			<div id="scene">
+	    				<!-- Seven image layers, each layer slightly bigger than the one behind, making 'closer' layers move faster. -->
+	    				
+	    				<img class="parallax-layer" data-depth="0.20" src="static/img/par-1.png" alt=""/>
+	    				<img class="parallax-layer" data-depth="0.20" src="static/img/par-2.png" alt=""/>
+	    				<img class="parallax-layer" data-depth="0.40" src="static/img/par-3.png" alt=""/>
+	    				<img class="parallax-layer parallax-layer-4" data-depth="0.20" src="static/img/par-4.png" alt=""/>
+	    				
+	    				<!-- Rounded corners -->
+	    				
+	    			</div>
+	    		</div>
 	    		<div class="slider-header-wrap">
 	    			<div class="slide-left sliderS">
 	    				<div class="slide-prof">
@@ -92,8 +170,9 @@
 	    					</div>
 	    					<div class="sub-text">
 	    						початок тексту статті
+
 	    					</div>
-	    					<div class="btn-read hvr-radial-out">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -106,8 +185,9 @@
 	    					</div>
 	    					<div class="sub-text">
 	    						початок тексту статті
+	    						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, possimus.
 	    					</div>
-	    					<div class="btn-read hvr-radial-out">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -120,8 +200,9 @@
 	    					</div>
 	    					<div class="sub-text">
 	    						початок тексту статті
+	    						Lorem ipsum dolor sit amet.
 	    					</div>
-	    					<div class="btn-read hvr-radial-out">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -139,7 +220,7 @@
 	    					<div class="white-text">
 	    						комерційних ВОГ
 	    					</div>
-	    					<div class="btn-read">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -151,9 +232,9 @@
 	    						Перевірки Оператором ГРМ
 	    					</div>
 	    					<div class="white-text">
-	    						комерційних ВОГ
+	    						Lorem ipsum dolor sit amet.
 	    					</div>
-	    					<div class="btn-read">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -165,9 +246,9 @@
 	    						Перевірки Оператором ГРМ
 	    					</div>
 	    					<div class="white-text">
-	    						комерційних ВОГ
+	    						Lorem ipsum dolor.
 	    					</div>
-	    					<div class="btn-read">
+	    					<div class="btn-read hvr-fade">
 	    						Читати
 	    					</div>
 	    				</div>
@@ -184,28 +265,33 @@
 	    			
 	    		</div>
 	    		<div class="link__index">
-	    			<a href="">
-	    				<div class="elips elips-1">
+	    			<a href="#main-header">
+	    				<div class="elips elips_active">
 	    				
 	    				</div>
 	    			</a>
-	    			<a href="">
-	    				<div class="elips elips-2">
+	    			<a href="#main__title-1">
+	    				<div class="elips">
 	    				
 	    				</div>
 	    			</a>
-	    			<a href="">
-	    				<div class="elips elips-3">
+	    			<a href="#main__title-work">
+	    				<div class="elips">
 	    				
 	    				</div>
 	    			</a>
-	    			<a href="">
-	    				<div class="elips elips-4">
+	    			<a href="#main__title-client">
+	    				<div class="elips">
 	    				
 	    				</div>
 	    			</a>
-	    			<a href="">
-	    				<div class="elips elips-5">
+	    			<a href="#main__title-team">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    			<a href="#main__title-practise">
+	    				<div class="elips">
 	    				
 	    			</div>
 	    			</a>
@@ -214,9 +300,9 @@
 	    	<!-- /.container -->
 	    </header>
 	    <!-- /.main-header -->
-	    <section class="about_us">
+	    <section id="about_us" class="about_us">
 	    	<div class="container">
-	    		<div class="main__title">
+	    		<div id="main__title-1" class="main__title">
 	    			ПРО НАС
 	    		</div>
 	    		<div class="about-block">
@@ -246,17 +332,49 @@
 	    			</div>
 	    		</div>
 	    		<div class="btn-wrap">
-	    			<div class="btn-read">
+	    			<div class="btn-read hvr-fade">
 	    						Більше
 	    					</div>
+	    		</div>
+	    		<div class="link__index">
+	    			<a href="#main-header">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-1">
+	    				<div class="elips elips_active">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-work">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-client">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-team">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    			<a href="#main__title-practise">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
 	    		</div>
 	    	</div>
 	    	<!-- /.container -->
 	    </section>
 	    <!-- /.about_us -->
-	    <section class="work">
+	    <section id="work" class="work">
 	    	<div class="container">
-	    		<div class="main__title">
+	    		<div id="main__title-work" class="main__title">
 	    			ЯК МИ ПРАЦЮЄМО?
 	    		</div>
 	    		<div class="work-block">
@@ -371,103 +489,268 @@
 	    				</div>
 	    			</div>
 	    		</div>
+	    		<div class="link__index">
+	    			<a href="#main-header">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-1">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-work">
+	    				<div class="elips elips_active">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-client">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-team">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    			<a href="#main__title-practise">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    		</div>
+
 	    	</div>
 	    	<!-- /.container -->
 	    </section>
 	    <!-- /.work -->
-	    <section class="client">
+	    <section id="client" class="client">
 	    	<div class="container">
-	    		<div class="main__title">
+	    		<div id="main__title-client" class="main__title">
 	    			НАШІ КЛІЄНТИ
 	    		</div>
 	    		<div class="client-block">
-	    			<div class="client-profile-left client-profile">
-	    				<img src="static/img/client/client-1.png" alt="">
-	    				<div class="client-text">
-	    					<div class="green-name">
-	    						ТЗОВ «РАДЕХІВСЬКИЙ ЦУКОР»
-	    						<div class="line-client"></div>
-	    					</div>
-	    					
-	    					<div class="sub-work">
-	    						Компанія є найбільшим виробником цукру в Західній Україні, що входить до міжнародної групи 
-	    						компаній Pfeifer&Langen – провідного виробника цукру на теренах Європейського Союзу. 
-	    						<br>
-	    						<br>
+	    			<div class="sliderLogo">
+	    				<div class="slide-prof">
+	    					<div class="client-profile-left client-profile">
+	    						<img src="static/img/client/client-1.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ТЗОВ «РАДЕХІВСЬКИЙ ЦУКОР»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія є найбільшим виробником цукру в Західній Україні, що входить до міжнародної групи 
+	    								компаній Pfeifer&Langen – провідного виробника цукру на теренах Європейського Союзу. 
+	    								<br>
+	    								<br>
 
-	    						Компанія спеціалізується на переробці цукрового буряка, виробництві цукру-піску, меляси та жому. 
-	    						Виробничі  потужності підприємства розміщені у Львівській та Тернопільській областях
+	    								Компанія спеціалізується на переробці цукрового буряка, виробництві цукру-піску, меляси та жому. 
+	    								Виробничі  потужності підприємства розміщені у Львівській та Тернопільській областях
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile">
+	    						<img class="fix-client" src="static/img/client/client-3.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ПП «АГРОЛОГІСТИКА»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія спеціалізується на вантажних перевезеннях по Україні та Європі у будь-якому напрямку. 
+	    								Доставками по Україні займається вже близько 10 років. 
+	    								<br>
+	    								<br> 
+	    								Проводить перевезення, в тому числі, збірних вантажів, надає експедиційні послуги та послуги 
+	    								з ремонту і технічного обслуговування великогабаритних автомобілів
+	    							</div>
+	    						</div>
 	    					</div>
 	    				</div>
 	    			</div>
-	    			<div class="client-profile client-profile-right">
-	    				<img src="static/img/client/client-2.png" alt="">
-	    				<div class="client-text">
-	    					<div class="green-name">
-	    						ПП «ЗАХІДНИЙ БУГ»
-	    						<div class="line-client"></div>
-	    					</div>
-	    					
-	    					<div class="sub-work">
-	    						Компанія спеціалізується на вирощуванні зернових, технічних та кормових культур, їх зберіганні та реалізації. 
-	    						В обробітку компанії перебуває більше 50 тис. га земель сільськогосподарського призначення.
-	    						<br>
-	    						<br> 
+	    			<div class="sliderLogo">
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile-right">
+	    						<img src="static/img/client/client-2.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ПП «ЗАХІДНИЙ БУГ»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія спеціалізується на вирощуванні зернових, технічних та кормових культур, їх зберіганні та реалізації. 
+	    								В обробітку компанії перебуває більше 50 тис. га земель сільськогосподарського призначення.
+	    								<br>
+	    								<br> 
 
-	    						В структуру компанії входить агрохімічна лабораторія, яка надає послуги з перевірки добрив, зерна, насіння, кормів, води тощо. 
-	    						Також компанія "Західний Буг" надає послуги з виготовлення насіннєвого матеріалу, протруйки насіння його реалізації
+	    								В структуру компанії входить агрохімічна лабораторія, яка надає послуги з перевірки добрив, зерна, насіння, кормів, води тощо. 
+	    								Також компанія "Західний Буг" надає послуги з виготовлення насіннєвого матеріалу, протруйки насіння його реалізації
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile-right">
+	    						<img src="static/img/client/client-4.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								АГРОкомпанія «VINAVI» 
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work sub-work-4">
+	    								Компанія спеціалізується на виробництві сільськогосподарської техніки, 
+	    								здійснює її поставку по Україні. Працює на ринку більше 15 років.
+	    							</div>
+	    						</div>
 	    					</div>
 	    				</div>
 	    			</div>
-	    			<div class="client-profile-left client-profile">
-	    				<img src="static/img/client/client-3.png" alt="">
-	    				<div class="client-text">
-	    					<div class="green-name">
-	    						ПП «АГРОЛОГІСТИКА»
-	    						<div class="line-client"></div>
+	    			<!-- /.sliderLogo -->
+	    			<div class="sliderLogo">
+	    				<div class="slide-prof">
+	    					<div class="client-profile-left client-profile">
+	    						<img src="static/img/client/client-1.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ТЗОВ «РАДЕХІВСЬКИЙ ЦУКОР»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія є найбільшим виробником цукру в Західній Україні, що входить до міжнародної групи 
+	    								компаній Pfeifer&Langen – провідного виробника цукру на теренах Європейського Союзу. 
+	    								<br>
+	    								<br>
+
+	    								Компанія спеціалізується на переробці цукрового буряка, виробництві цукру-піску, меляси та жому. 
+	    								Виробничі  потужності підприємства розміщені у Львівській та Тернопільській областях
+	    							</div>
+	    						</div>
 	    					</div>
-	    					
-	    					<div class="sub-work">
-	    						Компанія спеціалізується на вантажних перевезеннях по Україні та Європі у будь-якому напрямку. 
-	    						Доставками по Україні займається вже близько 10 років. 
-	    						<br>
-	    						<br> 
-	    						Проводить перевезення, в тому числі, збірних вантажів, надає експедиційні послуги та послуги 
-	    						з ремонту і технічного обслуговування великогабаритних автомобілів
+	    				</div>
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile">
+	    						<img class="fix-client" src="static/img/client/client-3.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ПП «АГРОЛОГІСТИКА»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія спеціалізується на вантажних перевезеннях по Україні та Європі у будь-якому напрямку. 
+	    								Доставками по Україні займається вже близько 10 років. 
+	    								<br>
+	    								<br> 
+	    								Проводить перевезення, в тому числі, збірних вантажів, надає експедиційні послуги та послуги 
+	    								з ремонту і технічного обслуговування великогабаритних автомобілів
+	    							</div>
+	    						</div>
 	    					</div>
 	    				</div>
 	    			</div>
-	    			<div class="client-profile client-profile-right">
-	    				<img src="static/img/client/client-4.png" alt="">
-	    				<div class="client-text">
-	    					<div class="green-name">
-	    						АГРОкомпанія «VINAVI» 
-	    						<div class="line-client"></div>
+	    			<div class="sliderLogo">
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile-right">
+	    						<img src="static/img/client/client-2.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								ПП «ЗАХІДНИЙ БУГ»
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work">
+	    								Компанія спеціалізується на вирощуванні зернових, технічних та кормових культур, їх зберіганні та реалізації. 
+	    								В обробітку компанії перебуває більше 50 тис. га земель сільськогосподарського призначення.
+	    								<br>
+	    								<br> 
+
+	    								В структуру компанії входить агрохімічна лабораторія, яка надає послуги з перевірки добрив, зерна, насіння, кормів, води тощо. 
+	    								Також компанія "Західний Буг" надає послуги з виготовлення насіннєвого матеріалу, протруйки насіння його реалізації
+	    							</div>
+	    						</div>
 	    					</div>
-	    					
-	    					<div class="sub-work sub-work-4">
-	    						Компанія спеціалізується на виробництві сільськогосподарської техніки, 
-	    						здійснює її поставку по Україні. Працює на ринку більше 15 років.
+	    				</div>
+	    				<div class="slide-prof">
+	    					<div class="client-profile client-profile-right">
+	    						<img src="static/img/client/client-4.png" alt="">
+	    						<div class="client-text">
+	    							<div class="green-name">
+	    								АГРОкомпанія «VINAVI» 
+	    								<div class="line-client"></div>
+	    							</div>
+	    							
+	    							<div class="sub-work sub-work-4">
+	    								Компанія спеціалізується на виробництві сільськогосподарської техніки, 
+	    								здійснює її поставку по Україні. Працює на ринку більше 15 років.
+	    							</div>
+	    						</div>
 	    					</div>
 	    				</div>
 	    			</div>
+	    			<!-- /.sliderLogo -->
+	    			
+	    			
+	    		</div>
+	    		<div class="link__index">
+	    			<a href="#main-header">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-1">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-work">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-client">
+	    				<div class="elips elips_active">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-team">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    			<a href="#main__title-practise">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
 	    		</div>
 	    	</div>
 	    	<!-- /.container -->
 	    </section>
 	    <!-- /.client -->
-	    <section class="team">
-	    	<div class="container">
-	    		<div class="main__title">
+	    <section id="team" class="team">
+	    <div class="container">
+	    		<div id="main__title-team" class="main__title">
 	    			КОМАНДА
 	    		</div>
-	    	</div>
+	    	
 	    	<div class="team-wrap">
 	    		<img src="static/img/team/team-img.png" alt="">
 	    		<div class="team-name-block">
-	    			<div class="team-name-prof">
-	    				 Боровця М. 
-	    			</div>
+	    			<a href="javascript: goToPage();">
+	    				<div class="team-name-prof">
+	    					 Боровця М. 
+	    				</div>
+	    			</a>
 	    			<div class="team-name-prof">
 	    				Сміхура В. 
 	    			</div>
@@ -497,7 +780,7 @@
 	    				<div class="sub-text">
 	    					початок тексту статті
 	    				</div>
-	    				<div class="btn-read hvr-radial-out">
+	    				<div class="btn-read hvr-fade">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -511,7 +794,7 @@
 	    				<div class="sub-text">
 	    					початок тексту статті
 	    				</div>
-	    				<div class="btn-read hvr-radial-out">
+	    				<div class="btn-read hvr-fade">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -525,7 +808,7 @@
 	    				<div class="sub-text">
 	    					початок тексту статті
 	    				</div>
-	    				<div class="btn-read hvr-radial-out">
+	    				<div class="btn-read hvr-fadet">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -543,7 +826,7 @@
 	    				<div class="white-text">
 	    					комерційних ВОГ
 	    				</div>
-	    				<div class="btn-read">
+	    				<div class="btn-read hvr-fade">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -557,7 +840,7 @@
 	    				<div class="white-text">
 	    					комерційних ВОГ
 	    				</div>
-	    				<div class="btn-read">
+	    				<div class="btn-read hvr-fade">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -571,7 +854,7 @@
 	    				<div class="white-text">
 	    					комерційних ВОГ
 	    				</div>
-	    				<div class="btn-read">
+	    				<div class="btn-read hvr-fade">
 	    					Читати
 	    				</div>
 	    			</div>
@@ -590,26 +873,52 @@
 	    	<div class="btn-read btn-gold">
 	    		Більше
 	    	</div>
+	    	<div class="link__index">
+	    		<a href="#main-header">
+	    			<div class="elips">
+	    			
+	    			</div>
+	    		</a>
+	    		<a href="#main__title-1">
+	    			<div class="elips">
+	    			
+	    			</div>
+	    		</a>
+	    		<a href="#main__title-work">
+	    			<div class="elips">
+	    			
+	    			</div>
+	    		</a>
+	    		<a href="#main__title-client">
+	    			<div class="elips">
+	    			
+	    			</div>
+	    		</a>
+	    		<a href="#main__title-team">
+	    			<div class="elips elips_active">
+	    			
+	    		</div>
+	    		</a>
+	    		<a href="#main__title-practise">
+	    			<div class="elips">
+	    			
+	    		</div>
+	    		</a>
+	    	</div>
+	    </div>
 	    	<!-- /.container -->
 	    </section>
 	    <!-- /.team -->
-	    <section class="practise">
+	    <section id="practise" class="practise">
 	    	<div class="container">
-	    		<div class="main__title">
+	    		<div id="main__title-practise" class="main__title">
 	    			НАШІ ПРАКТИКИ
 	    		</div>
 	    		<div class="practise-block">
 	    			<div class="pract-prof">
 	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
-	    					<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50px" height="50px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-	    					viewBox="0 0 21000 29700"
-	    					 xmlns:xlink="http://www.w3.org/1999/xlink" stroke="blue" fill="purple">
-
-<g>
-	    					  <path stroke="blue" fill="purple" d="M6103 35021c0,-1 0,-3 0,-3l-58 -115c10,-6 16,-16 16,-28 0,-6 -4,-10 -10,-10 -6,0 -11,4 -11,10 0,6 -4,11 -10,11 -6,0 -11,-5 -11,-11 0,-5 -3,-9 -8,-10l-66 -15c-1,-12 -9,-21 -20,-26l0 -18 18 -18c3,-4 4,-8 2,-12l-21 -42c-4,-8 -15,-8 -19,0l-21 42c-2,4 -1,8 2,12l18 18 0 18c-6,3 -12,7 -16,13l-66 -14c-6,-1 -13,4 -13,10 0,6 -4,11 -10,11 -6,0 -11,-5 -11,-11 0,-6 -4,-10 -10,-10 -6,0 -11,4 -11,10 0,12 7,22 17,28l-57 115c-2,3 -2,8 0,11 18,22 43,35 72,35 28,0 54,-13 71,-35 3,-3 3,-8 1,-11l-57 -115c6,-3 11,-9 14,-15l55 12c2,12 10,22 21,26l0 170 -21 0c-3,0 -6,1 -8,3l-31 31c-3,3 -4,8 -2,12 1,4 5,6 9,6l126 0c5,0 8,-2 10,-6 2,-4 1,-8 -2,-11l-32 -32c-2,-2 -4,-3 -7,-3l-21 0 0 -170c7,-3 13,-7 16,-13l59 13c2,8 8,15 15,19l-57 115c-2,3 -2,8 1,11 17,22 42,35 71,35 28,0 54,-13 71,-35 2,-3 3,-6 2,-8 0,-2 1,2 0,0 0,-2 1,2 0,0zm-304 -20c-13,0 -26,-4 -37,-10l73 0c-10,6 -23,10 -36,10zm46 -31l-92 0 46 -92 46 92zm69 -208l9 17 -9 8 -8 -8 8 -17zm28 313l10 10 -75 0 10 -10 55 0zm-28 -210c-5,0 -10,-5 -10,-11 0,-6 5,-10 10,-10 6,0 11,4 11,10 0,6 -5,11 -11,11zm116 178c-13,0 -26,-4 -37,-10l73 0c-10,6 -23,10 -36,10zm-46 -31l46 -92 46 92 -92 0z"/>
-</g>
-	    					</svg>
+	    					<img src="static/img/practise/pract-1.png" alt="">
 	    				
 	    				</div>
 	    				<div class="green-practise">
@@ -620,16 +929,138 @@
 	    					діяльності Адвокатського 
 	    					об'єднання «Галицька ...
 	    				</div>
-	    				<div class="btn-read">
+	    				<div class="btn-read hvr-fade">
 	    					Більше
 	    				</div>
 	    			</div>
+	    			<div class="pract-prof pract-prof-center">
+	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
+	    				<div class="pract-icon">
+	    					<img src="static/img/practise/pract-1.png" alt="">
+	    				
+	    				</div>
+	    				<div class="green-practise">
+	    					Судова практика 
+	    				</div>
+	    				<div class="sub-practise">
+	    					Важливим напрямком 
+	    					діяльності Адвокатського 
+	    					об'єднання «Галицька ...
+	    				</div>
+	    				<div class="btn-read hvr-fade">
+	    					Більше
+	    				</div>
+	    			</div>
+	    			<div class="pract-prof">
+	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
+	    				<div class="pract-icon">
+	    					<img src="static/img/practise/pract-1.png" alt="">
+	    				
+	    				</div>
+	    				<div class="green-practise">
+	    					Судова практика 
+	    				</div>
+	    				<div class="sub-practise">
+	    					Важливим напрямком 
+	    					діяльності Адвокатського 
+	    					об'єднання «Галицька ...
+	    				</div>
+	    				<div class="btn-read hvr-fade">
+	    					Більше
+	    				</div>
+	    			</div>
+	    			<div class="pract-prof">
+	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
+	    				<div class="pract-icon">
+	    					<img src="static/img/practise/pract-1.png" alt="">
+	    				
+	    				</div>
+	    				<div class="green-practise">
+	    					Судова практика 
+	    				</div>
+	    				<div class="sub-practise">
+	    					Важливим напрямком 
+	    					діяльності Адвокатського 
+	    					об'єднання «Галицька ...
+	    				</div>
+	    				<div class="btn-read hvr-fade">
+	    					Більше
+	    				</div>
+	    			</div>
+	    			<div class="pract-prof pract-prof-center">
+	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
+	    				<div class="pract-icon">
+	    					<img src="static/img/practise/pract-1.png" alt="">
+	    				
+	    				</div>
+	    				<div class="green-practise">
+	    					Судова практика 
+	    				</div>
+	    				<div class="sub-practise">
+	    					Важливим напрямком 
+	    					діяльності Адвокатського 
+	    					об'єднання «Галицька ...
+	    				</div>
+	    				<div class="btn-read hvr-fade">
+	    					Більше
+	    				</div>
+	    			</div>
+	    			<div class="pract-prof">
+	    				<!-- <img class="pract-icon" src="static/img/practise/pract-1.png" alt=""> -->
+	    				<div class="pract-icon">
+	    					<img src="static/img/practise/pract-1.png" alt="">
+	    				
+	    				</div>
+	    				<div class="green-practise">
+	    					Судова практика 
+	    				</div>
+	    				<div class="sub-practise">
+	    					Важливим напрямком 
+	    					діяльності Адвокатського 
+	    					об'єднання «Галицька ...
+	    				</div>
+	    				<div class="btn-read hvr-fade">
+	    					Більше
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="link__index">
+	    			<a href="#main-header">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-1">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-work">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-client">
+	    				<div class="elips">
+	    				
+	    				</div>
+	    			</a>
+	    			<a href="#main__title-team">
+	    				<div class="elips">
+	    				
+	    			</div>
+	    			</a>
+	    			<a href="#main__title-practise">
+	    				<div class="elips elips_active">
+	    				
+	    			</div>
+	    			</a>
 	    		</div>
 	    	</div>
 	    	<!-- /.container -->
 	    </section>
 	    <!-- /.practise -->
-	    <section class="map">
+	    <section id="map" class="map">
 	    	<div class="container">
 	    		<div class="map-wrap">
 	    			<div class="map-text">
@@ -831,5 +1262,6 @@
 	    <script src="static/slick/slick.min.js"></script>
 	    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	    <script src="static/js/jquery.maskedinput.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </body>
 </html>

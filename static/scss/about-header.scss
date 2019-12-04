@@ -3,6 +3,11 @@
 		color: #D2A351 !important;
 		margin: 0 auto;
 		margin-top: 40px;
+		transition: color .2s, background .2s;
+
+		&:hover {
+			color: #fff !important;
+		}
 	}
 }
 .about__title-wrap {
@@ -122,7 +127,16 @@
 		font-size: 13px;
 	}
 }
+@media (max-width: 518px) {
+	.green__title {
+		font-size: 29px;
+	}
+	
+}
 @media (max-width: 432px) {
+	.about-line {
+		display: none;
+	}
 	.about-prof {
 		margin-right: 0;
 	}

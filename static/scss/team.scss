@@ -1,4 +1,5 @@
 .team {
+	position: relative;
 	padding-bottom: 20px;
 	background: url('../img/team/team-bg.png') no-repeat center top / cover;
 padding-bottom: 90px;
@@ -8,8 +9,16 @@ padding-bottom: 90px;
 
 	}
 	.btn-gold {
-		margin-top: -42px;
+		
 	}
+		.main__title {
+			&:before {
+			display: block;
+			content: "";
+			height: 155px;
+			margin: -155px 0 0;
+			}
+		}
 
 }
 .team-name-prof {
@@ -42,6 +51,12 @@ padding-bottom: 90px;
 	background-color: #D2A351;
 	color: #2B2A29 !important;
 	margin: 0 auto;
+	transition: color .2s, background-color .2s;
+
+	&:hover {
+		background-color: transparent;
+		color: #fff !important;
+	}
 
 }
 @media (max-width: 1744px) {
