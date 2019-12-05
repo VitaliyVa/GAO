@@ -1206,9 +1206,9 @@ html {
     opacity: 0; }
 
 .pract-fix:hover .pract-icon {
-  transform: scale(2); }
+  transform: scale(2.4); }
 .pract-fix:hover .pract-icon-1 {
-  transform: translateY(-50px); }
+  transform: translateY(-60px); }
 .pract-fix:hover .btn-read {
   background-color: #D2A351;
   color: #fff; }
@@ -1221,7 +1221,8 @@ html {
   transition: opacity .4s; }
 
 .pract-icon-1 {
-  transition: transform .2s; }
+  transition: transform .2s;
+  min-height: 138px; }
 
 .green-practise {
   font-family: 'Roboto Slab', serif;
@@ -1296,6 +1297,9 @@ html {
   .pract-prof {
     width: 80%; } }
 @media (max-width: 371px) {
+  .pract-fix {
+    min-height: 445px !important; }
+
   .pract-prof {
     width: 89%;
     margin-left: 0;
@@ -1546,7 +1550,8 @@ html {
   padding-bottom: 15px; }
 
 .img-prof {
-  width: 100%; }
+  width: 100%;
+  min-height: 400px; }
 
 .green__name {
   position: relative;

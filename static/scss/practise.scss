@@ -65,12 +65,12 @@
 .pract-fix {
 	&:hover {
 		.pract-icon {
-			transform: scale(2);
+			transform: scale(2.4);
 			
 	
 		}
 		.pract-icon-1 {
-			transform: translateY(-50px);
+			transform: translateY(-60px);
 		}
 		.btn-read {
 			background-color: #D2A351;
@@ -92,6 +92,7 @@
 }
 .pract-icon-1 {
 	transition: transform .2s;
+	min-height: 138px;
 }
 .green-practise {
 	font-family: 'Roboto Slab', serif;
@@ -182,6 +183,9 @@
 	}
 }
 @media (max-width: 371px) {
+	.pract-fix {
+		min-height: 445px !important;
+	}
 	.pract-prof {
 	    width: 89%;
 	    margin-left: 0;
