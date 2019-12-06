@@ -10,6 +10,9 @@
 		}
 	}
 }
+.svg-about-page {
+	margin-right: 20px;
+}
 .about__title-wrap {
 	position: relative;
 }
@@ -41,7 +44,8 @@
 	}
 }
 .about__subtitles {
-	font-family: 'meiryob';
+	font-family: 'Montserrat', sans-serif;
+	                font-weight: 700;
 	color: #727271;
 
 }
@@ -67,7 +71,8 @@
 }
 .gold-text {
 	color: #D2A351;
-	 font-family: 'meiryob';
+	 font-family: 'Montserrat', sans-serif;
+	                 font-weight: 700;
 	 line-height: 1;
 	 font-size: 19px;
 	     padding-bottom: 10px;
@@ -84,13 +89,14 @@
 	margin-right: 15px;
 }
 .geo-text {
-	 font-family: 'meiryo';
+	  font-family: 'Montserrat', sans-serif;
 	 color: #6C6C6C;
 	 line-height: 1;
 	 font-size: 18px;
 }
 .bold-block {
-	font-family: 'meiryob';
+	font-family: 'Montserrat', sans-serif;
+	                font-weight: 700;
 	color: #6C6C6C;
 	line-height: 1;
 	

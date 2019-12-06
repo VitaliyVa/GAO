@@ -1,8 +1,17 @@
 .footer {
 	background: linear-gradient(39deg, #030A00, #112804);
+
+
+	.fil0 {
+		fill: #fff;
+	}
+	.fil1 {
+		fill: #fff !important;
+	}
 }
 .footer-left {
-	  font-family: 'meiryo';
+	  font-family: 'Montserrat', sans-serif;
+	    
 	  color: #EBECEC;
 	  font-size: 18px;
 	  line-height: 1;
@@ -29,6 +38,9 @@
 	display: flex;
 	
 	justify-content: space-between;
+}
+.filfix {
+	fill: #fff !important;
 }
 @media (max-width: 1467px) {
 	.foter-multi {

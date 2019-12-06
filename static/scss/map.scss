@@ -56,9 +56,24 @@
 		margin-left: 8px;
 	}
 }
+.soc-footer {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	&:hover {
+		.footer-soc-fill {
+			fill: #D2A351;
+		}
+	}
+}
+.footer-soc-fill {
+	transition: fill .2s;
+	fill: #727271;
+}
 .marib {
 	color: #6C6C6C;
-	font-family: 'meiryob';
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	max-width: 450px;
 }
 .adress-block {
