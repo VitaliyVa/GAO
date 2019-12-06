@@ -260,9 +260,9 @@ $(document).ready(function() {
 
     // scroll
 
-    window.addEventListener('scroll', function() {
-      document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
-    });
+    // window.addEventListener('scroll', function() {
+    //   document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+    // });
 
 //     function offset(el) {
 //     var rect = el.getBoundingClientRect(),
