@@ -46,6 +46,15 @@ html {
     padding-top: 50px;
     padding-bottom: 50px; }
 
+.about__link {
+  border-bottom: 3px solid #D2A351; }
+
+.blog__link {
+  border-bottom: 3px solid #D2A351; }
+
+.contact__link {
+  border-bottom: 3px solid #D2A351; }
+
 .svg-soc {
   width: 25px;
   height: 25px;
@@ -812,6 +821,9 @@ html {
   .menu-info-new {
     display: flex;
     width: 93%; }
+    .menu-info-new a {
+      font-size: 15px !important;
+      color: #D2A351 !important; }
 
   .info-icon-block-new {
     display: none; }
@@ -1153,8 +1165,8 @@ html {
   .team .main__title:before {
     display: block;
     content: "";
-    height: 155px;
-    margin: -155px 0 0; }
+    height: 30px;
+    margin: -30px 0 0; }
 
 .team-name-prof {
   font-family: 'Montserrat', sans-serif;
@@ -1280,7 +1292,6 @@ html {
   box-shadow: 0px 0px 34px -5px #c4bec4;
   text-align: center;
   padding: 55px;
-  cursor: pointer;
   margin-top: 40px;
   margin-left: 30px; }
   .pract-prof .btn-read {
@@ -1414,13 +1425,16 @@ html {
   margin-right: 50px;
   line-height: 1.4;
   cursor: pointer;
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  transition: all .2s; }
 
 .city-name_active {
-  color: #D2A351 !important; }
+  color: #D2A351 !important;
+  transition: all .2s; }
 
 .map-info-block {
-  display: none; }
+  display: none;
+  transition: all .2s; }
 
 .city-swap {
   display: flex;

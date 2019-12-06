@@ -55,6 +55,15 @@ html {
 	}
 
 }
+.about__link {
+	border-bottom: 3px solid #D2A351;
+}
+.blog__link {
+	border-bottom: 3px solid #D2A351;
+}
+.contact__link {
+	border-bottom: 3px solid #D2A351;
+}
 
 .svg-soc {
 	
@@ -1116,6 +1125,11 @@ html {
 	.menu-info-new {
 		display: flex;
 		 width: 93%;
+
+		 a {
+		 	font-size: 15px !important;
+		 	color: #D2A351 !important;
+		 }
 	}
 	.info-icon-block-new {
 		display: none;

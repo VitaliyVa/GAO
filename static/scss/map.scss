@@ -10,14 +10,18 @@
 	line-height: 1.4;
 	cursor: pointer;
 	padding-bottom: 14px;
+	transition: all .2s;
 
 	
 }
 .city-name_active {
 	color: #D2A351 !important;
+	transition: all .2s;
 }
 .map-info-block {
 	display: none;
+	
+	transition: all .2s;
 }
 .city-swap {
 	display: flex;

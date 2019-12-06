@@ -19,19 +19,10 @@ $(document).ready(function() {
 
         localStorage.team_swipe = null;
 
-        document.getElementById('main__title-team').scrollIntoView({
-
-
-        });
+        document.getElementById('main__title-team').scrollIntoView();
 
        
     }
-    // var heightTest = $('#main__title-team').offset().top;
-    // var heightMenu = $('#menu_id').offset().top;
-    // console.log(heightTest);
-    // console.log($('#main__title-team')[0].offsetParent.offsetTop);
-    // // console.log(heightMenu);
-    //     window.scrollTo(0, heightTest - 90);
 
 
     $('#team__link').on("click", function() {
@@ -58,19 +49,56 @@ $(document).ready(function() {
 
         // }
     });
+    
+
+    // practise
 
 
+        if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html' && localStorage.practise_swipe == 1) {
 
-    $('#practise__link').on("click", function() {
-
-        if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+            localStorage.practise_swipe = null;
 
             document.getElementById('team-btn').scrollIntoView();
 
-        } else {
-            localStorage.setItem('team_swipe', 1);
-            window.location.href = "index.html";
+           
         }
+
+
+        $('#practise__link').on("click", function() {
+
+            if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+
+                document.getElementById('team-btn').scrollIntoView();
+
+            } else {
+                localStorage.setItem('practise_swipe', 1);
+                window.location.href = "index.html";
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // $('#practise__link').on("click", function() {
+
+    //     if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+
+    //         document.getElementById('main__title-practise').scrollIntoView();
+
+    //     } else {
+    //         localStorage.setItem('team_swipe', 1);
+    //         window.location.href = "index.html";
+    //     }
 
 
 
@@ -124,8 +152,8 @@ $(document).ready(function() {
 
 
     // $('.menu-link_active').on('click', function() {
-    // 	link.removeClass('menu-link_active');
-    // 	 $("html,body").css("overflow","visible");
+    //  link.removeClass('menu-link_active');
+    //   $("html,body").css("overflow","visible");
 
     // });
 
@@ -150,11 +178,11 @@ $(document).ready(function() {
     // var sub_menu_active = $('sub-menu_active');
     // var sub_menu = $('.sub-menu');
     // sub_link.on('click', function () {
-    // 	sub_menu.toggleClass('sub-menu_active');
-    // 	sub_link_2.removeClass('sub-menu_active-2');
+    //  sub_menu.toggleClass('sub-menu_active');
+    //  sub_link_2.removeClass('sub-menu_active-2');
     // });
     // sub_menu_active.on("click", function() {
-    // 	sub_link.removeClass('sub-menu_active');
+    //  sub_link.removeClass('sub-menu_active');
     // });
     // // sub-menu-2
     // var sub_link_2 = $('.sub_link-2');
@@ -162,17 +190,17 @@ $(document).ready(function() {
     // var sub_menu_2 = $('.sub-menu-2');
 
     // sub_link_2.on('click', function () {
-    // 	sub_menu_2.toggleClass('sub-menu_active-2');
-    // 	sub_link.removeClass('sub-menu_active');
+    //  sub_menu_2.toggleClass('sub-menu_active-2');
+    //  sub_link.removeClass('sub-menu_active');
     // });
     // sub_menu_active_2.on("click",function() {
-    // 	sub_link_2.removeClass('sub-menu_active-2');
+    //  sub_link_2.removeClass('sub-menu_active-2');
     // });
     // id
     // var id_link = $('.elips');
     // id_link.on("click", function () {
-    // 	// id_link.toggleClass('elips_active');
-    // 	$(this).addClass('elips_active').siblings().removeClass('elips_active');
+    //  // id_link.toggleClass('elips_active');
+    //  $(this).addClass('elips_active').siblings().removeClass('elips_active');
 
     // });
 
@@ -285,10 +313,10 @@ $(document).ready(function() {
     // 
     // });
     // $('#team__link').on("click", function () {
-    // 	window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + top_menu);
+    //  window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + top_menu);
     // });
     // $('#practise__link').on("click", function () {
-    // 	window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + block_5 + top_menu);
+    //  window.scrollTo(0, block_1 + block_2 + block_3 + block_4 + block_5 + top_menu);
     // });
 
 
