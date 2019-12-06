@@ -1258,7 +1258,8 @@ html {
 @media (max-width: 362px) {
   .team-name-prof {
     font-size: 6px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-left: 6px; }
 
   .team-name-smihura {
     margin-left: 12px !important; }

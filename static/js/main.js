@@ -50,6 +50,18 @@ $(document).ready(function() {
         // }
     });
     
+     $('.team__footer').on("click", function() {
+
+        if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+
+            document.getElementById('main__title-team').scrollIntoView();
+
+        } else {
+            localStorage.setItem('team_swipe', 1);
+            window.location.href = "index.html";
+        }
+
+    });
 
     // practise
 
@@ -75,44 +87,21 @@ $(document).ready(function() {
                 window.location.href = "index.html";
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // $('#practise__link').on("click", function() {
-
-    //     if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
-
-    //         document.getElementById('main__title-practise').scrollIntoView();
-
-    //     } else {
-    //         localStorage.setItem('team_swipe', 1);
-    //         window.location.href = "index.html";
-    //     }
-
-
-
-
-        // 
-
-        // localStorage.getItem('test')
-        // alert("перед")
-        // window.location.href = 'index.html'
-        // alert("післся")
-
-
-        // }
     });
+
+         $('.practise__footer').on("click", function() {
+
+            if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+
+                document.getElementById('team-btn').scrollIntoView();
+
+            } else {
+                localStorage.setItem('practise_swipe', 1);
+                window.location.href = "index.html";
+            }
+
+    });
+
 
 
     
