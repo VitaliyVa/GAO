@@ -56,15 +56,31 @@ html {
 
 }
 .about__link {
-	border-bottom: 3px solid #D2A351;
+	border-bottom: 3px solid #D2A351 !important;
 }
 .blog__link {
-	border-bottom: 3px solid #D2A351;
+	border-bottom: 3px solid #D2A351 !important;
 }
 .contact__link {
-	border-bottom: 3px solid #D2A351;
+	border-bottom: 3px solid #D2A351 !important;
 }
+.svg-arrow {
+	fill: #fff;
 
+
+	&:hover {
+		.arrow-color {
+			stroke: #D2A351 !important;
+		}
+
+	}
+}
+.arrow-color {
+	fill: #ccc !important;
+	transition: stroke .2s;
+	stroke: #727271 !important;
+
+}
 .svg-soc {
 	
 	width: 25px;
@@ -749,8 +765,9 @@ html {
 	z-index: 0;
 }
 .parallax-logo {
+	width: 98%;
 	left: 7px !important;
-	    top: 14px !important;
+	    top: 22px !important;
 }
 @media (max-width: 1800px) {
 	.main-header {
@@ -865,6 +882,22 @@ html {
 @media (max-width: 933px) {
 	.arrow-wrap {
     right: 38%;
+	}
+}
+@media (max-width: 785px) {
+	.m-header-img {
+		animation: slide-1 5.5s infinite linear;
+	}
+	@keyframes slide-1 {
+		0% {
+		    transform: rotate(0deg) translate(-4px) rotate(0deg);
+		    -webkit-transform: rotate(0deg) translate(-4px) rotate(0deg);
+		}
+
+		100% {
+		    transform: rotate(360deg) translate(-4px) rotate(-360deg);
+		    -webkit-transform: rotate(360deg) translate(-4px) rotate(-360deg);
+		}
 	}
 }
 @media (max-width: 753px) {
@@ -1150,7 +1183,7 @@ html {
 	.menu_active {
 		width: 100vw;
 		height: 10000px;
-		background-color: rgba(#000, 0.9);
+		background-color: rgba(#000, 0.99999999999);
 		
 		right: 0px;
 		top: 0px;

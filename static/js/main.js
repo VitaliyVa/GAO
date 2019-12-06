@@ -1,6 +1,31 @@
 new WOW().init();
 
 $(document).ready(function() {
+
+
+
+
+
+
+
+
+
+
+     // about__link
+     if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/about_page.html') {
+        $('#about__link').addClass('about__link').removeClass('hvr-underline-from-center');
+     }
+     //blog__link 
+     if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/blog.html') {
+        $('#blog__link').addClass('blog__link').removeClass('hvr-underline-from-center');
+     }
+     //contact__link  
+     if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/contact_page.html') {
+        $('#contact__link').addClass('contact__link').removeClass('hvr-underline-from-center');
+     }
+
+
+
     //paralax
 
 
@@ -255,7 +280,7 @@ $(document).ready(function() {
         //таб сделать активным, остальные неактивными
         $(this).addClass('city-name_active').siblings().removeClass('city-name_active');
         //открыть нужную вкладку, закрыть остальные
-        $('.tab-content .map-info-block').css('display', 'none').eq(index).css('display', 'block');
+        $('.tab-content .map-info-block').addClass("tab_1").eq(index).addClass("tab_2");
     })
 
 
