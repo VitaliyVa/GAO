@@ -271,25 +271,29 @@ $(document).ready(function() {
     // TAB
 
 
-    //обработчик кликов по неактивным табам
-    $('.city-swap div').not('.city-name_active').click(function() {
-        //номер таба
-        var index = $(this).index();
-        //соответствующая закладка
-        var content = $('.tab-content li').eq(index);
-        //таб сделать активным, остальные неактивными
-        $(this).addClass('city-name_active').siblings().removeClass('city-name_active');
-        //открыть нужную вкладку, закрыть остальные
-        $('.tab-content .map-info-block').addClass("tab_1").eq(index).addClass("tab_2");
-    })
+    $(".city-name").on("click", function(){
+        ($(this)[0].dataset.tab);
+      
+        ($(".city-name").removeClass("city-name_active"));
+         ($(this).addClass("city-name_active"));
+        ($(".map-info-block").removeClass("map-info-block_active"));
+            ($("#"+$(this)[0].dataset.tab).addClass("map-info-block_active"));
+    });
 
 
+    // //обработчик кликов по неактивным табам
+    // $('.city-swap div').not('.city-name_active').click(function() {
+    //     //номер таба
+    //     var index = $(this).index();
+    //     //соответствующая закладка
+    //     var content = $('.tab-content li').eq(index);
+    //     //таб сделать активным, остальные неактивными
+    //     $(this).addClass('city-name_active').siblings().removeClass('city-name_active');
+    //     //открыть нужную вкладку, закрыть остальные
+    //     $('.tab-content .map-info-block').removeClass('map-info-block_active').eq(index).addClass('map-info-block_active');
+    // })
 
 
-    $(function() {
-        $('.city-swap div:first').addClass('city-name_active');
-        $('.tab-content .map-info-block:first').css('display', 'block');
-    })
 
 
 

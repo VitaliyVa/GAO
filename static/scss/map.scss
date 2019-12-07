@@ -3,16 +3,17 @@
 	background-color: #F5F5F5;
 }
 .tab_1 {
-	visibility:hidden;
-	 opacity:0;
+	display: none;
+	
 	 transition:visibility 0.5s linear 0.5s,opacity 0.5s linear;
 
 }
 .tab_2 {
-	visibility:visible;
-	  opacity:1;
+	display: block;
+	 
 	  transition-delay:0.5s
 }
+
 .city-name {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
@@ -25,14 +26,37 @@
 
 	
 }
+.tab-content {
+	min-height: 500px;
+}
 .city-name_active {
 	color: #D2A351 !important;
 	transition: all .2s;
 }
 .map-info-block {
-	display: none;
+	visibility: hidden;
+	    transition: all .2s;
+	    position: absolute;
+	    height: 452px;
+	    display: block;
+	    left: -530px;
+	    opacity: 0;
+}
+.map-info-block_active {
+	 visibility: visible;
+	 opacity: 1;
+    left: 50px;
+
+
+	}
+#tab_1 {
 	
-	transition: all .2s;
+}
+#tab_2 {
+	
+}
+#tab_3 {
+	
 }
 .city-swap {
 	display: flex;
