@@ -56,7 +56,7 @@
 
 .img-prof {
 	width: 100%;
-	min-height: 400px;
+	min-height: 370px;
 }
 
 .green__name {
@@ -133,6 +133,12 @@
 @media (max-width: 669px ) {
 	.about__subtitles {
 		font-size: 13px;
+	}
+}
+@media (max-width: 525px) {
+	.img-prof {
+	width: 100%;
+	min-height: 253px;
 	}
 }
 @media (max-width: 518px) {

@@ -765,11 +765,14 @@ html {
     color: #D2A351; }
 
 .modal-block .btn-read {
+  display: block;
   color: #D2A351;
   margin: 0 auto;
   margin-top: 20px;
-  transition: color .2s, background .2s; }
+  background-color: transparent;
+  transition: color .2s, background-color .2s; }
   .modal-block .btn-read:hover {
+    background-color: #D2A351 !important;
     color: #fff !important; }
 
 .fix-client {
@@ -1184,11 +1187,6 @@ html {
     margin-top: 100px; }
   .team .btn-gold {
     margin-bottom: 68px; }
-  .team .main__title:before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin: -30px 0 0; }
 
 .team-name-prof {
   font-family: 'Montserrat', sans-serif;
@@ -1754,7 +1752,7 @@ html {
 
 .img-prof {
   width: 100%;
-  min-height: 400px; }
+  min-height: 370px; }
 
 .green__name {
   position: relative;
@@ -1812,6 +1810,10 @@ html {
 @media (max-width: 669px) {
   .about__subtitles {
     font-size: 13px; } }
+@media (max-width: 525px) {
+  .img-prof {
+    width: 100%;
+    min-height: 253px; } }
 @media (max-width: 518px) {
   .green__title {
     font-size: 29px; } }

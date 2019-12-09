@@ -95,7 +95,7 @@ $(document).ready(function() {
 
             localStorage.practise_swipe = null;
 
-            document.getElementById('team-btn').scrollIntoView();
+            document.getElementById('main__title-practise').scrollIntoView();
 
            
         }
@@ -299,7 +299,7 @@ $(document).ready(function() {
 
     //mask 
 
-    $("#phone").mask("+38 (09) 9 9 - 9 9 - 9 9 9 9");
+    $("#phone").mask("+38 (099) 99 - 99 - 999");
 
 
 

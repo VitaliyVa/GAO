@@ -1027,11 +1027,14 @@ html {
 }
 .modal-block {
 	.btn-read {
+		display: block;
 		color: #D2A351;
 		margin: 0 auto;
 		margin-top: 20px;
-		transition: color .2s, background .2s;
+		background-color: transparent;
+		transition: color .2s, background-color .2s;
 		&:hover {
+			background-color: #D2A351 !important;
 			color: #fff !important;
 		}
 
