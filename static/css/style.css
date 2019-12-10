@@ -779,7 +779,7 @@ html {
     color: #D2A351; }
   .input-wrap .form_icon {
     width: 26px;
-    height: 29px;
+    height: 26px;
     margin-right: 20px; }
   .input-wrap ::-webkit-input-placeholder {
     color: #D2A351; }
@@ -1723,7 +1723,7 @@ html {
     padding-top: 5px; } }
 @media (max-width: 404px) {
   .footer-prof {
-    font-size: 9px; }
+    display: none; }
 
   .footer-center {
     width: 100%;
