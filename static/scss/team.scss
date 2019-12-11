@@ -29,7 +29,7 @@
 	line-height: 1;
 	font-size: 17px;
 	max-width: 150px;
-	margin-left: 35px;
+	margin-left: 60px;
 	text-align: center;
 	cursor: pointer;
 	transition: font-family 3.4s, color .2s;
@@ -39,12 +39,15 @@
 	 }
 }
 .team-name-block {
+	width: 90%;
 	display: flex;
-
+	
+	
+	margin: 0 auto;
 	margin-top: -80px;
 }
 .team-wrap {
-	width: 54%;
+	width: 70%;
 	margin: 0 auto;
 
 
@@ -68,17 +71,17 @@
 }
 @media (max-width: 1744px) {
 	.team-name-prof {
-		margin-left: 20px;
+		margin-left: 45px;
 	}
 }
 @media (max-width: 1623px) {
 	.team-name-prof {
-		margin-left: 20px;
+		margin-left: 37px;
 	}
 }
 @media (max-width: 1532px) {
 	.team-name-prof {
-		margin-left: 8px;
+		margin-left: 29px;
 	}
 	.team-wrap {
 
@@ -87,9 +90,10 @@
 		}
 	}
 }
-@media (max-width: 1333px) {
+@media (max-width: 1379px) {
 	.team-name-prof {
-		font-size: 15px;
+		font-size: 14px;
+		margin-left: 33px;
 	}
 }
 
@@ -101,6 +105,7 @@
 @media (max-width: 1297px) {
 	.team-name-prof {
 		font-size: 15px;
+		margin-left: 18px;
 		margin-top: 30px;
 	}
 }
@@ -121,17 +126,13 @@
 		}
 	}
 }
-@media (max-width: 957px) {
-	.team-name-prof {
-		font-size: 11px;
-	}
-}
+
 @media (max-width: 874px) {
 	
 }
 @media (max-width: 1200px) {
 	.team-name-prof {
-	    margin-left: 48px;
+	    margin-left: 36px;
 	    font-size: 16px;
 	}
 	.team-wrap {
@@ -144,13 +145,22 @@
 	    font-size: 16px;
 	}
 }
-@media (max-width: 940px) {
+@media (max-width: 1041px) {
 	.team-name-prof {
-	    margin-left: 20px;
-	    font-size: 16px;
+		margin-left: 20px;
 	}
 }
-@media (max-width: 852px) {
+
+@media (max-width: 957px) {
+	.team-name-prof {
+		font-size: 11px;
+		margin-left: 35px;
+	}
+}
+@media (max-width: 856px) {
+	.team-name-block {
+		width: 100%;
+	}
 	.team-name-prof {
 	    margin-left: 8px;
 	    font-size: 16px;

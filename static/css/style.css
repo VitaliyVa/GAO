@@ -1220,7 +1220,7 @@ html {
   line-height: 1;
   font-size: 17px;
   max-width: 150px;
-  margin-left: 35px;
+  margin-left: 60px;
   text-align: center;
   cursor: pointer;
   transition: font-family 3.4s, color .2s; }
@@ -1228,11 +1228,13 @@ html {
     color: #D2A351; }
 
 .team-name-block {
+  width: 90%;
   display: flex;
+  margin: 0 auto;
   margin-top: -80px; }
 
 .team-wrap {
-  width: 54%;
+  width: 70%;
   margin: 0 auto; }
   .team-wrap img {
     min-height: 500px; }
@@ -1248,25 +1250,27 @@ html {
 
 @media (max-width: 1744px) {
   .team-name-prof {
-    margin-left: 20px; } }
+    margin-left: 45px; } }
 @media (max-width: 1623px) {
   .team-name-prof {
-    margin-left: 20px; } }
+    margin-left: 37px; } }
 @media (max-width: 1532px) {
   .team-name-prof {
-    margin-left: 8px; }
+    margin-left: 29px; }
 
   .team-wrap img {
     min-height: 400px; } }
-@media (max-width: 1333px) {
+@media (max-width: 1379px) {
   .team-name-prof {
-    font-size: 15px; } }
+    font-size: 14px;
+    margin-left: 33px; } }
 @media (max-width: 1227px) {
   .team-wrap img {
     min-height: 305px; } }
 @media (max-width: 1297px) {
   .team-name-prof {
     font-size: 15px;
+    margin-left: 18px;
     margin-top: 30px; } }
 @media (max-width: 1193px) {
   margin-left: 10px;
@@ -1277,12 +1281,9 @@ html {
 @media (max-width: 974px) {
   .team-wrap img {
     min-height: 250px; } }
-@media (max-width: 957px) {
-  .team-name-prof {
-    font-size: 11px; } }
 @media (max-width: 1200px) {
   .team-name-prof {
-    margin-left: 48px;
+    margin-left: 36px;
     font-size: 16px; }
 
   .team-wrap {
@@ -1291,11 +1292,17 @@ html {
   .team-name-prof {
     margin-left: 30px;
     font-size: 16px; } }
-@media (max-width: 940px) {
+@media (max-width: 1041px) {
   .team-name-prof {
-    margin-left: 20px;
-    font-size: 16px; } }
-@media (max-width: 852px) {
+    margin-left: 20px; } }
+@media (max-width: 957px) {
+  .team-name-prof {
+    font-size: 11px;
+    margin-left: 35px; } }
+@media (max-width: 856px) {
+  .team-name-block {
+    width: 100%; }
+
   .team-name-prof {
     margin-left: 8px;
     font-size: 16px; } }
@@ -1381,7 +1388,8 @@ html {
   .pract-prof:hover .sub-practise {
     opacity: 0; }
   .pract-prof:hover .circle-delete {
-    opacity: 0; }
+    opacity: 0;
+    stroke-width: 2px !important; }
 
 .pract-fix:hover .pract-icon {
   transform: scale(2.4); }
