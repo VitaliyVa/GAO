@@ -1366,7 +1366,7 @@ html {
   overflow: hidden;
   max-width: 370px;
   height: 485px;
-  min-height: 500px;
+  min-height: 463px;
   width: 34%;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 34px -5px #c4bec4;
@@ -1392,9 +1392,9 @@ html {
     stroke-width: 2px !important; }
 
 .pract-fix:hover .pract-icon {
-  transform: scale(2.4); }
+  transform: scale(1.2); }
 .pract-fix:hover .pract-icon-1 {
-  transform: translateY(-60px); }
+  transform: translateY(-14px); }
 .pract-fix:hover .btn-read {
   background-color: #D2A351;
   color: #fff; }
