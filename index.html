@@ -8,13 +8,15 @@
 	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="static/css/animate.css">
 	<script type="text/javascript" src="static/js/jQuery.js"></script>
-	<script type="text/javascript" src="static/js/lazy.js"></script>
+	
   	<script src="static/js/wow.min.js"></script>
-  	<script type="text/javascript" src="static/js/main.js" async></script>
+  	
   	<link rel="stylesheet" href="static/slick/slick.css">
   	<link rel="stylesheet" href="static/slick/slick-theme.css">
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
   	<link rel="stylesheet" href="static/css/jquery.parallax.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+
   	
 </head>
 <body>
@@ -212,7 +214,7 @@
                       Команда
                       </a>
                          
-                      <img class="menu-arrow" data-src="static/img/menu-arrow.png" alt="">
+                      <img class="menu-arrow bLazy" data-src="static/img/menu-arrow.png" alt="">
                       
                     
                       <ul class="sub-menu">
@@ -231,7 +233,7 @@
                       Практики
                       </a>
                         
-                      <img class="menu-arrow" data-src="static/img/menu-arrow.png" alt="">
+                      <img class="menu-arrow bLazy" data-src="static/img/menu-arrow.png" alt="">
                       
                     
                       <ul class="sub-menu">
@@ -265,9 +267,9 @@
                         Працюємо з 9.00 по 18.00
                       </div>
                       <div class="info-icon-block">
-                        <img data-src="static/img/header-ico-1.png" alt="">
-                        <img data-src="static/img/header-ico-2.png" alt="">
-                        <img data-src="static/img/header-ico-3.png" alt="">
+                        <img class="bLazy" data-src="static/img/header-ico-1.png" alt="">
+                        <img class="bLazy" data-src="static/img/header-ico-2.png" alt="">
+                        <img class="bLazy" data-src="static/img/header-ico-3.png" alt="">
                       </div>
                     </div>
                   </ul>
@@ -284,9 +286,9 @@
 	    		</div>
 	    		<!-- <div id="showScroll"></div> -->
 	    		<div class="info-icon-block-container">
-	    					<img data-src="static/img/header-ico-1.png" alt="">
-	    					<img data-src="static/img/header-ico-2.png" alt="">
-	    					<img data-src="static/img/header-ico-3.png" alt="">
+	    					<img class="bLazy" data-src="static/img/header-ico-1.png" alt="">
+	    					<img class="bLazy" data-src="static/img/header-ico-2.png" alt="">
+	    					<img class="bLazy" data-src="static/img/header-ico-3.png" alt="">
 	    				</div>
 	    		<form method="post" action="sendmail.php" class="formA" id="modal-form" style="display:none;">
 	    		  
@@ -295,27 +297,33 @@
 	    		  		<img src="static/img/green-logo.png" alt="">
 	    		  	</div>
 	    		  	<div class="input-wrap">
-	    		  		<img class="form_icon" src="static/img/form-icon-1.png" alt="">
-	    		  		<input type="text" placeholder="Прізвище та ім'я" required>
+	    		  		<div class="wrap-mail">
+             <img class="form_icon" src="static/img/form-icon-1.png" alt="">     
+                </div>
+	    		  		<input type="text" minlength="2" placeholder="Прізвище та ім'я" required>
 	    		  	</div>
 	    		  	<div class="input-wrap">
+                <div class="wrap-mail">
 	    		  		<img class="form_icon" src="static/img/form-icon-2.png" alt="">
+              </div>
 	    		  		<input id="phone" type="text" placeholder="+38 (0_) _ _ - _ _ - _ _ _" required>
 	    		  	</div>
 	    		  	<div class="input-wrap">
+                <div class="wrap-mail wrap-mail-3">
 	    		  		<img class="form_icon" src="static/img/form-icon-3.png" alt="">
-	    		  		<input type="text" placeholder="Email" required>
+              </div>
+	    		  		<input type="email" placeholder="Email" required>
 	    		  	</div>
-	    		  	<div class="btn-read hvr-fade">
-	    		  		Надіслати
-	    		  	</div>
+	    		  	 <input value="Надіслати" type="submit" class="btn-read hvr-fade">
+	    		  		
+	    		  	
 	    		  </div>
 
 	    		</form>
 	    		
-	    		<a class="link-fanc" data-src="#modal-form">
+	    		<a class="link-fanc bLazy" data-src="#modal-form">
 	    			<div class="btn-communicate hvr-bounce-to-right">
-	    				<img class="comun-icon" data-src="static/img/communicate-icon.png" alt="">
+	    				<img class="comun-icon bLazy" data-src="static/img/communicate-icon.png" alt="">
 	    				Консультація
 	    			</div>
 	    		</a>
@@ -528,24 +536,24 @@
 	    		</div>
 	    		<div class="about-block">
 	    			<div class="about-left">
-	    				<img data-src="static/img/about-us/about-img.png" alt="">
+	    				<img class="b-lazy" data-src="static/img/about-us/about-img.png" alt="">
 	    			</div>
 	    			<div class="about-right">
 	    				<div class="about-profile">
-	    					<img data-src="static/img/about-us/about-icon-1.png" alt="">
+	    					<img class="bLazy" data-src="static/img/about-us/about-icon-1.png" alt="">
 	    					<div class="punct-text">
 	    						Наша Команда вітає Вас на сайті адвокатського об'єднання 
 	    						«Галицька правнича група».
 	    					</div>
 	    				</div>
 	    				<div class="about-profile">
-	    					<img data-src="static/img/about-us/about-icon-2.png" alt="">
+	    					<img class="bLazy" data-src="static/img/about-us/about-icon-2.png" alt="">
 	    					<div class="punct-text">
 	    						Ми - команда досвідчених юристів, котрі завжди рухаються вперед у ногу з часом. Наш  «колективний розум»  працює виключно на позитивний результат усі 24 години на добу. Ми працьовиті та завзяті, ті, хто завжди впевнений у своїх діях. Однак,  основною нашою рисою є те, що ми вміємо приймати правильні рішення, щоб досягти для Вас бажаного результату.
 	    					</div>
 	    				</div>
 	    				<div class="about-profile">
-	    					<img data-src="static/img/about-us/about-icon-3.png" alt="">
+	    					<img class="bLazy" data-src="static/img/about-us/about-icon-3.png" alt="">
 	    					<div class="punct-text">
 	    						Україна - одна з найбільших у світі країн-виробників сільськогосподарської продукції. Аграрний бізнес займає левову частку у формуванні валового національного продукту в економіці України. 
 	    					</div>
@@ -612,7 +620,7 @@
 	    					</div>
 	    				</div>
 	    				
-	    					<img data-src="static/img/work/work-icon-1.png" alt="">
+	    					<img class="bLazy" data-src="static/img/work/work-icon-1.png" alt="">
 	    				
 	    			</div>
 	    			<div class="work-wrap-right">
@@ -633,7 +641,7 @@
 	    						</div>
 	    					</div>
 	    					
-	    						<img data-src="static/img/work/work-icon-2.png" alt="">
+	    						<img class="bLazy" data-src="static/img/work/work-icon-2.png" alt="">
 	    					
 	    				</div>
 	    			</div>
@@ -651,7 +659,7 @@
 	    					</div>
 	    				</div>
 	    				
-	    					<img data-src="static/img/work/work-icon-3.png" alt="">
+	    					<img class="bLazy" data-src="static/img/work/work-icon-3.png" alt="">
 	    				
 	    			</div>
 	    			<div class="work-wrap-right">
@@ -669,7 +677,7 @@
 	    						</div>
 	    					</div>
 	    					
-	    						<img data-src="static/img/work/work-icon-4.png" alt="">
+	    						<img class="bLazy" data-src="static/img/work/work-icon-4.png" alt="">
 	    					
 	    				</div>
 	    			</div>
@@ -686,7 +694,7 @@
 	    					</div>
 	    				</div>
 	    				
-	    					<img data-src="static/img/work/work-icon-5.png" alt="">
+	    					<img class="bLazy" data-src="static/img/work/work-icon-5.png" alt="">
 	    				
 	    			</div>
 	    			<div class="work-wrap-right">
@@ -705,7 +713,7 @@
 	    						</div>
 	    					</div>
 	    					
-	    						<img data-src="static/img/work/work-icon-6.png" alt="">
+	    						<img class="bLazy" data-src="static/img/work/work-icon-6.png" alt="">
 	    					
 	    				</div>
 	    			</div>
@@ -756,7 +764,7 @@
 	    			<div class="sliderLogo">
 	    				<div class="slide-prof">
 	    					<div class="client-profile-left client-profile">
-	    						<img data-src="static/img/client/client-1.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-1.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ТЗОВ «РАДЕХІВСЬКИЙ ЦУКОР»
@@ -777,7 +785,7 @@
 	    				</div>
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile">
-	    						<img class="fix-client" data-src="static/img/client/client-3.png" alt="">
+	    						<img class="fix-client bLazy" data-src="static/img/client/client-3.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ПП «АГРОЛОГІСТИКА»
@@ -799,7 +807,7 @@
 	    			<div class="sliderLogo">
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile-right">
-	    						<img data-src="static/img/client/client-2.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-2.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ПП «ЗАХІДНИЙ БУГ»
@@ -820,7 +828,7 @@
 	    				</div>
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile-right">
-	    						<img data-src="static/img/client/client-4.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-4.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								АГРОкомпанія «VINAVI» 
@@ -839,7 +847,7 @@
 	    			<div class="sliderLogo">
 	    				<div class="slide-prof">
 	    					<div class="client-profile-left client-profile">
-	    						<img data-src="static/img/client/client-1.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-1.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ТЗОВ «РАДЕХІВСЬКИЙ ЦУКОР»
@@ -860,7 +868,7 @@
 	    				</div>
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile">
-	    						<img class="fix-client" data-src="static/img/client/client-3.png" alt="">
+	    						<img class="fix-client bLazy" data-src="static/img/client/client-3.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ПП «АГРОЛОГІСТИКА»
@@ -882,7 +890,7 @@
 	    			<div class="sliderLogo">
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile-right">
-	    						<img data-src="static/img/client/client-2.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-2.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								ПП «ЗАХІДНИЙ БУГ»
@@ -903,7 +911,7 @@
 	    				</div>
 	    				<div class="slide-prof">
 	    					<div class="client-profile client-profile-right">
-	    						<img data-src="static/img/client/client-4.png" alt="">
+	    						<img class="bLazy" data-src="static/img/client/client-4.png" alt="">
 	    						<div class="client-text">
 	    							<div class="green-name">
 	    								АГРОкомпанія «VINAVI» 
@@ -966,7 +974,7 @@
 	    		</div>
 	    	
 	    	<div class="team-wrap">
-	    		<img data-src="static/img/team/team-img.png" alt="">
+	    		<img class="bLazy" data-src="static/img/team/team-img.png" alt="">
 	    		<div class="team-name-block">
 	    			<a href="profile_page.html">
 	    				<div class="team-name-prof">
@@ -1192,7 +1200,7 @@
 	    		</div>
 	    		<div class="practise-block">
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1231,7 +1239,7 @@
               </a>
 	    			</div>
 	    			<div class="pract-prof pract-prof-center">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1273,7 +1281,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1323,7 +1331,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1362,7 +1370,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof pract-prof-center">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1402,7 +1410,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1450,7 +1458,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1506,7 +1514,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof pract-prof-center">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1545,7 +1553,7 @@ viewBox="0 0 500 500"
               </a>
 	    			</div>
 	    			<div class="pract-prof">
-	    				<!-- <img class="pract-icon" data-src="static/img/practise/pract-1.png" alt=""> -->
+	    				<!-- <img class="pract-icon" class="bLazy" data-src="static/img/practise/pract-1.png" alt=""> -->
 	    				<div class="pract-icon">
 	    					<div class="svg-pract">
 	    						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="142px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1629,7 +1637,7 @@ viewBox="0 0 500 500"
 	    	<div class="container">
 	    		<div class="map-wrap">
 	    			<div class="map-text">
-	    				<img class="logo-map" data-src="static/img/map/logo-map.png" alt="">
+	    				<img class="logo-map bLazy" data-src="static/img/map/logo-map.png" alt="">
 	    				<div class="city-swap">
 	    					<div data-tab="tab_1" class="city-name city-name_active">
 	    						Центральний офіс
@@ -1881,7 +1889,9 @@ viewBox="0 0 500 500"
 	    				</div>
 	    			</div>
 	    			<div class="map-right">
-	    				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1287.1159344597438!2d24.0602703!3d49.8193071!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1574930592995!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	    				<iframe id="mtab_1" class="map-footer map-footer_active bLazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.9265612593326!2d24.53525131560841!3d50.255955879449026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47253a60a91c409d%3A0xc27e998fb31fb587!2z0LLRg9C70LjRhtGPINCu0L3QvtGB0YLRliwgMzksINCf0LDQstC70ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA4MDI1MA!5e0!3m2!1sru!2sua!4v1576234420529!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+             <iframe id="mtab_2" class="map-footer bLazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.932494315427!2d25.59598641558165!3d49.56129687936264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473031485394f13f%3A0x756b6fd1ad616bdd!2z0JHRgNC-0LTRltCy0YHRjNC60LAg0LLRg9C70LjRhtGPLCAxNCwg0KLQtdGA0L3QvtC_0ZbQu9GMLCDQotC10YDQvdC-0L_RltC70YzRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDYwMDA!5e0!3m2!1sru!2sua!4v1576234550721!5m2!1sru!2sua" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.932494315427!2d25.59598641558165!3d49.56129687936264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473031485394f13f%3A0x756b6fd1ad616bdd!2z0JHRgNC-0LTRltCy0YHRjNC60LAg0LLRg9C70LjRhtGPLCAxNCwg0KLQtdGA0L3QvtC_0ZbQu9GMLCDQotC10YDQvdC-0L_RltC70YzRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDYwMDA!5e0!3m2!1sru!2sua!4v1576234550721!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+             <iframe id="mtab_3" class="map-footer bLazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1249.376460706454!2d24.050053153787907!3d49.86177149070957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adce202ff34d3%3A0xff826a37f312f325!2sBusiness%20Center%20%22Lemberg%22!5e0!3m2!1sru!2sua!4v1576234606192!5m2!1sru!2sua" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1249.376460706454!2d24.050053153787907!3d49.86177149070957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adce202ff34d3%3A0xff826a37f312f325!2sBusiness%20Center%20%22Lemberg%22!5e0!3m2!1sru!2sua!4v1576234606192!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	    			</div>
 	    		</div>
 	    	</div>
@@ -1945,6 +1955,10 @@ viewBox="0 0 500 500"
 	    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	    <script src="static/js/jquery.maskedinput.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      
+      <script src="https://raw.githubusercontent.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.extra.min.js"></script>
+      <script type="text/javascript" src="static/js/bLazy.js"></script>
+<script type="text/javascript" src="static/js/main.js"  ></script>
 </body>
 </html>
 

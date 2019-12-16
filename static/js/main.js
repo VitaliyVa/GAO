@@ -4,12 +4,13 @@ $(document).ready(function() {
 
 
 
+    var bLazy = new Blazy({ 
+ 
+            offset: 100,
+            selector: 'img'
 
 
-
-
-
-
+        });
 
      // about__link
      if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/about_page.html') {
@@ -44,7 +45,11 @@ $(document).ready(function() {
 
         localStorage.team_swipe = null;
 
-        document.getElementById('main__title-team').scrollIntoView();
+        function linkF() {
+           document.getElementById('main__title-team').scrollIntoView();
+        }
+
+        setTimeout(linkF, 500);
 
        
     }
@@ -53,8 +58,12 @@ $(document).ready(function() {
     $('#team__link').on("click", function() {
 
         if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
+            function linkF() {
+               document.getElementById('main__title-team').scrollIntoView();
+            }
 
-            document.getElementById('main__title-team').scrollIntoView();
+            setTimeout(linkF, 500);
+           
 
         } else {
             localStorage.setItem('team_swipe', 1);
@@ -79,7 +88,13 @@ $(document).ready(function() {
 
         if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
 
-            document.getElementById('main__title-team').scrollIntoView();
+             function linkF() {
+               document.getElementById('main__title-team').scrollIntoView();
+            }
+
+            setTimeout(linkF, 500);
+
+            
 
         } else {
             localStorage.setItem('team_swipe', 1);
@@ -95,7 +110,13 @@ $(document).ready(function() {
 
             localStorage.practise_swipe = null;
 
-            document.getElementById('main__title-practise').scrollIntoView();
+             function linkP() {
+             document.getElementById('main__title-practise').scrollIntoView();
+            }
+
+            setTimeout(linkP, 500);
+
+            
 
            
         }
@@ -105,7 +126,14 @@ $(document).ready(function() {
 
             if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
 
-                document.getElementById('team-btn').scrollIntoView();
+
+             function linkP() {
+              document.getElementById('team-btn').scrollIntoView();
+            }
+
+            setTimeout(linkP, 500);
+
+                
 
             } else {
                 localStorage.setItem('practise_swipe', 1);
@@ -118,7 +146,11 @@ $(document).ready(function() {
 
             if (window.location.href == 'file:///C:/Users/odmin/Desktop/GAO/index.html') {
 
-                document.getElementById('team-btn').scrollIntoView();
+                 function linkP() {
+                  document.getElementById('team-btn').scrollIntoView();
+                }
+
+                setTimeout(linkP, 500);
 
             } else {
                 localStorage.setItem('practise_swipe', 1);
@@ -136,6 +168,11 @@ $(document).ready(function() {
     });
 
 
+
+    $.extend($.lazyLoadXT, {
+      edgeY:  200,
+      srcAttr: 'data-src'
+    });
 
 
     // MENU
@@ -276,8 +313,14 @@ $(document).ready(function() {
       
         ($(".city-name").removeClass("city-name_active"));
          ($(this).addClass("city-name_active"));
+
         ($(".map-info-block").removeClass("map-info-block_active"));
             ($("#"+$(this)[0].dataset.tab).addClass("map-info-block_active"));
+
+             ($(".map-footer").removeClass("map-footer_active"));
+             ($("#m"+$(this)[0].dataset.tab).addClass("map-footer_active"));
+   
+            console.log(($("#m"+$(this)[0].dataset.tab).addClass("map-footer_active")));
     });
 
 

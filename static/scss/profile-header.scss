@@ -76,8 +76,15 @@
     line-height: 1;
     font-size: 13px;
 	}
+	.about-prof {
+		.green__name {
+		 
+		    min-height: 42px;
+		}
+	}
 	.green__name {
 	    position: relative;
+	   
 	    color: #054C23;
 	    font-family: 'Roboto Slab', serif;
 	    font-weight: 700;
